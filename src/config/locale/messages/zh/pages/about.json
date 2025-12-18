@@ -137,29 +137,13 @@
         ],
         "className": "bg-muted"
       },
-      "stats": {
-        "id": "about-stats",
-        "block": "stats",
-        "title": "BananaPro 数据一览",
-        "description": "与 <strong>Nano Banana</strong> 社区共同成长。",
-        "items": [
-          {
-            "title": "100万+",
-            "description": "活跃创作者"
-          },
-          {
-            "title": "1000万+",
-            "description": "已生成图像"
-          },
-          {
-            "title": "150+",
-            "description": "覆盖国家"
-          },
-          {
-            "title": "99.9%",
-            "description": "在线率"
-          }
-        ]
+      "disclaimer": {
+        "id": "disclaimer",
+        "block": "text",
+        "title": "免责声明",
+        "label": "重要提示",
+        "description": "<strong>BananaPro</strong> 是一个独立产品，<strong>与 Google、Anthropic、Black Forest Labs 或任何其他 AI 模型提供商没有关联、未获其认可或赞助</strong>。'Nano Banana' 是社区用语，指代特定的 AI 图像生成能力。本平台提及的 'Gemini'、'Flux'、'SEED' 及其他模型名称均为其各自所有者的商标。BananaPro 提供用户友好的界面来访问各种 AI 图像生成服务，并不声称拥有底层 AI 技术的所有权。",
+        "className": "bg-muted border-l-4 border-primary"
       },
       "cta": {
         "id": "about-cta",

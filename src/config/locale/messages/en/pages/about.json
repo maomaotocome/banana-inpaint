@@ -137,29 +137,13 @@
         ],
         "className": "bg-muted"
       },
-      "stats": {
-        "id": "about-stats",
-        "block": "stats",
-        "title": "BananaPro by the Numbers",
-        "description": "Growing every day with the <strong>Nano Banana</strong> community.",
-        "items": [
-          {
-            "title": "1M+",
-            "description": "Active Creators"
-          },
-          {
-            "title": "10M+",
-            "description": "Images Generated"
-          },
-          {
-            "title": "150+",
-            "description": "Countries Served"
-          },
-          {
-            "title": "99.9%",
-            "description": "Uptime"
-          }
-        ]
+      "disclaimer": {
+        "id": "disclaimer",
+        "block": "text",
+        "title": "Disclaimer",
+        "label": "Important Notice",
+        "description": "<strong>BananaPro</strong> is an independent product and is <strong>not affiliated with, endorsed by, or sponsored by Google, Anthropic, Black Forest Labs, or any other AI model providers</strong>. 'Nano Banana' is a community-coined term referring to certain AI image generation capabilities. 'Gemini', 'Flux', 'SEED', and other model names mentioned on this platform are trademarks of their respective owners. BananaPro provides a user-friendly interface to access various AI image generation services and does not claim ownership of the underlying AI technologies.",
+        "className": "bg-muted border-l-4 border-primary"
       },
       "cta": {
         "id": "about-cta",
