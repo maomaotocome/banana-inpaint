@@ -1,6 +1,6 @@
 import '@/config/style/global.css';
 
-import { JetBrains_Mono, Merriweather, Noto_Sans_Mono } from 'next/font/google';
+import { JetBrains_Mono, Merriweather, Plus_Jakarta_Sans } from 'next/font/google';
 import { getLocale, setRequestLocale } from 'next-intl/server';
 import NextTopLoader from 'nextjs-toploader';
 
@@ -14,7 +14,7 @@ import { getAffiliateService } from '@/shared/services/affiliate';
 import { getAnalyticsService } from '@/shared/services/analytics';
 import { getCustomerService } from '@/shared/services/customer_service';
 
-const notoSansMono = Noto_Sans_Mono({
+const plusJakartaSans = Plus_Jakarta_Sans({
   subsets: ['latin'],
   variable: '--font-sans',
   display: 'swap',
@@ -105,7 +105,7 @@ export default async function RootLayout({
   return (
     <html
       lang={locale}
-      className={`${notoSansMono.variable} ${merriweather.variable} ${jetbrainsMono.variable}`}
+      className={`${plusJakartaSans.variable} ${merriweather.variable} ${jetbrainsMono.variable}`}
       suppressHydrationWarning
     >
       <head>
@@ -151,7 +151,7 @@ export default async function RootLayout({
       </head>
       <body suppressHydrationWarning className="overflow-x-hidden">
         <NextTopLoader
-          color="#6466F1"
+          color="#FFD700"
           initialPosition={0.08}
           crawlSpeed={200}
           height={3}
