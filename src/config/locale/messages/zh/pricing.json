@@ -1,13 +1,13 @@
 {
   "metadata": {
     "title": "价格",
-    "description": "选择方案，立即开始"
+    "description": "选择方案，开启 Nano Banana Pro 创作之旅"
   },
   "pricing": {
     "id": "pricing",
-    "sr_only_title": "ShipAny 价格表",
-    "title": "价格",
-    "description": "获取 ShipAny 的全部功能，极速交付你的 AI SaaS 创业项目。",
+    "sr_only_title": "Nano Banana Pro 价格表",
+    "title": "简单透明的定价",
+    "description": "解锁 Google Gemini 图像生成的强大能力。免费开始，随时升级。",
     "groups": [
       {
         "name": "one-time",
@@ -17,340 +17,389 @@
         "name": "monthly",
         "title": "包月",
         "is_featured": true,
-        "label": "立省15%"
+        "label": "热门"
       },
       {
         "name": "yearly",
-        "title": "包年"
+        "title": "包年",
+        "label": "立省30%"
       }
     ],
     "items": [
       {
         "title": "入门版",
-        "description": "开启你的第一个 SaaS 创业项目。",
+        "description": "适合体验 AI 图像生成的新用户。",
         "features_title": "包含",
         "features": [
-          "100 积分，有效期 1 个月",
-          "NextJS 项目模板",
-          "SEO 友好结构",
-          "支持 Stripe 支付",
-          "Supabase 数据存储",
-          "Google Oauth & 一键登录",
-          "多语言（i18n）支持"
+          "100 积分（一次性）",
+          "Nano Banana 模型访问",
+          "720p 图像生成",
+          "社区画廊访问",
+          "标准处理速度",
+          "邮件支持"
         ],
         "interval": "one-time",
-        "amount": 9900,
+        "amount": 990,
         "currency": "USD",
-        "price": "$99",
-        "original_price": "$199",
+        "price": "$9.90",
+        "original_price": "$19.90",
         "currencies": [
           {
             "currency": "CNY",
-            "amount": 69900,
-            "price": "¥699",
-            "original_price": "¥1399",
+            "amount": 6900,
+            "price": "¥69",
+            "original_price": "¥139",
             "payment_providers": ["stripe"]
           }
         ],
         "unit": "",
         "is_featured": false,
-        "tip": "一次付费，畅享无限项目部署！",
+        "tip": "无需订阅，轻松体验 Nano Banana Pro！",
         "button": {
-          "title": "获取 ShipAny",
+          "title": "立即开始",
           "url": "/#pricing",
           "icon": "RiFlashlightFill"
         },
         "product_id": "starter",
-        "product_name": "ShipAny 模板入门版",
+        "product_name": "Nano Banana 入门包",
         "credits": 100,
         "valid_days": 30,
         "group": "one-time"
       },
       {
-        "title": "标准版",
-        "description": "快速交付你的 SaaS 创业项目。",
-        "label": "热门",
-        "features_title": "包含入门版功能，此外",
+        "title": "专业版",
+        "description": "为需要更多创作能力的用户打造。",
+        "label": "超值",
+        "features_title": "包含入门版所有功能，此外",
         "features": [
-          "200 积分，有效期 3 个月",
-          "支持 Vercel 或 Cloudflare 部署",
-          "自动生成隐私政策&服务条款",
-          "集成 Google Analytics",
-          "集成 Google Search Console",
-          "Discord 技术社区",
-          "首个上线项目技术支持",
-          "终身免费更新"
+          "300 积分（一次性）",
+          "Nano Banana 2 Pro 模型访问",
+          "1080p 图像生成",
+          "无水印",
+          "商业使用权",
+          "优先处理",
+          "30天有效期"
         ],
         "interval": "one-time",
-        "amount": 19900,
+        "amount": 2490,
         "currency": "USD",
-        "price": "$199",
-        "original_price": "$299",
+        "price": "$24.90",
+        "original_price": "$39.90",
         "currencies": [
           {
             "currency": "CNY",
-            "amount": 139900,
-            "price": "¥1399",
-            "original_price": "¥1999",
+            "amount": 16900,
+            "price": "¥169",
+            "original_price": "¥279",
             "payment_providers": ["stripe"]
           }
         ],
         "unit": "",
         "is_featured": true,
-        "tip": "一次付费，畅享无限项目部署！",
+        "tip": "创作者的热门之选！",
         "button": {
-          "title": "获取 ShipAny",
+          "title": "获取专业版",
           "url": "/#pricing",
           "icon": "RiFlashlightFill"
         },
-        "product_id": "standard",
-        "product_name": "ShipAny 模板标准版",
-        "credits": 200,
-        "valid_days": 90,
+        "product_id": "pro",
+        "product_name": "Nano Banana 专业包",
+        "credits": 300,
+        "valid_days": 30,
         "group": "one-time"
       },
       {
-        "title": "高级版",
-        "description": "交付任意 AI SaaS 创业项目。",
-        "features_title": "包含标准版功能，此外",
+        "title": "旗舰版",
+        "description": "为专业用户提供极致创作体验。",
+        "features_title": "包含专业版所有功能，此外",
         "features": [
-          "300 积分，有效期 1 年",
-          "内置 AI 业务功能",
-          "用户中心",
-          "积分系统",
-          "为你的 SaaS 售卖 API",
-          "后台管理系统",
-          "优先技术支持"
+          "800 积分（一次性）",
+          "全部高级模型 (Flux, SEED)",
+          "4K 图像生成",
+          "API 访问",
+          "批量生成",
+          "优先支持",
+          "90天有效期"
         ],
         "interval": "one-time",
-        "amount": 29900,
+        "amount": 4990,
         "currency": "USD",
-        "price": "$299",
-        "original_price": "$399",
+        "price": "$49.90",
+        "original_price": "$79.90",
         "currencies": [
           {
             "currency": "CNY",
-            "amount": 199900,
-            "price": "¥1999",
-            "original_price": "¥2799",
-            "payment_providers": ["stripe", "creem"]
+            "amount": 34900,
+            "price": "¥349",
+            "original_price": "¥559",
+            "payment_providers": ["stripe"]
           }
         ],
         "unit": "",
         "is_featured": false,
-        "tip": "一次付费，畅享无限项目部署！",
+        "tip": "专业创作者的最佳选择！",
         "button": {
-          "title": "获取 ShipAny",
+          "title": "获取旗舰版",
           "url": "/#pricing",
           "icon": "RiFlashlightFill"
         },
-        "product_id": "premium",
-        "product_name": "ShipAny 模板高级版",
-        "credits": 300,
-        "valid_days": 365,
+        "product_id": "max",
+        "product_name": "Nano Banana 旗舰包",
+        "credits": 800,
+        "valid_days": 90,
         "group": "one-time"
       },
       {
-        "title": "入门版",
-        "description": "开启你的第一个 SaaS 创业项目。",
+        "title": "基础版",
+        "description": "适合业余爱好者和初学者。",
         "features_title": "包含",
         "features": [
-          "100 积分，有效期 1 个月",
-          "NextJS 项目模板",
-          "SEO 友好结构",
-          "支持 Stripe 支付",
-          "Supabase 数据存储",
-          "Google Oauth & 一键登录",
-          "多语言（i18n）支持"
+          "150 积分 / 月",
+          "Nano Banana 模型访问",
+          "720p 图像生成",
+          "社区画廊访问",
+          "标准处理速度",
+          "邮件支持"
         ],
         "interval": "month",
-        "amount": 8900,
+        "amount": 790,
         "currency": "USD",
-        "price": "$89",
-        "original_price": "$99",
+        "price": "$7.90",
+        "original_price": "$9.90",
+        "currencies": [
+          {
+            "currency": "CNY",
+            "amount": 4900,
+            "price": "¥49",
+            "original_price": "¥69",
+            "payment_providers": ["stripe"]
+          }
+        ],
         "unit": "/ 月",
         "is_featured": false,
-        "tip": "按月付费，畅享无限项目部署！",
+        "tip": "轻松入门的完美选择！",
         "button": {
-          "title": "获取 ShipAny",
+          "title": "立即订阅",
           "url": "/#pricing",
           "icon": "RiFlashlightFill"
         },
-        "product_id": "starter-monthly",
-        "product_name": "ShipAny 模板入门版包月",
-        "credits": 100,
+        "product_id": "basic-monthly",
+        "product_name": "Nano Banana 基础版包月",
+        "credits": 150,
         "valid_days": 30,
         "group": "monthly",
-        "plan_name": "入门版"
+        "plan_name": "基础版"
       },
       {
-        "title": "标准版",
-        "description": "快速交付你的 SaaS 创业项目。",
+        "title": "专业版",
+        "description": "为认真创作者和专业人士打造。",
         "label": "热门",
-        "features_title": "包含入门版功能，此外",
+        "features_title": "包含基础版所有功能，此外",
         "features": [
-          "200 积分，有效期 1 个月",
-          "支持 Vercel 或 Cloudflare 部署",
-          "自动生成隐私政策&服务条款",
-          "集成 Google Analytics",
-          "集成 Google Search Console",
-          "Discord 技术社区",
-          "首个上线项目技术支持",
-          "终身免费更新"
+          "500 积分 / 月",
+          "Nano Banana 2 Pro 模型访问",
+          "1080p 图像生成",
+          "无水印",
+          "商业使用权",
+          "优先处理",
+          "Discord 社区访问"
         ],
         "interval": "month",
-        "amount": 16900,
+        "amount": 1990,
         "currency": "USD",
-        "price": "$169",
-        "original_price": "$199",
+        "price": "$19.90",
+        "original_price": "$29.90",
+        "currencies": [
+          {
+            "currency": "CNY",
+            "amount": 13900,
+            "price": "¥139",
+            "original_price": "¥209",
+            "payment_providers": ["stripe"]
+          }
+        ],
         "unit": "/ 月",
         "is_featured": true,
-        "tip": "按月付费，极速上线你的 SaaS 项目。",
+        "tip": "创作者最受欢迎的方案！",
         "button": {
-          "title": "获取 ShipAny",
+          "title": "立即订阅",
           "url": "/#pricing",
           "icon": "RiFlashlightFill"
         },
-        "product_id": "standard-monthly",
-        "product_name": "ShipAny 模板标准版包月",
-        "credits": 200,
+        "product_id": "pro-monthly",
+        "product_name": "Nano Banana 专业版包月",
+        "credits": 500,
         "valid_days": 30,
         "group": "monthly",
-        "plan_name": "标准版"
+        "plan_name": "专业版"
       },
       {
-        "title": "高级版",
-        "description": "交付任意 AI SaaS 创业项目。",
-        "features_title": "包含标准版功能，此外",
+        "title": "旗舰版",
+        "description": "为高级用户提供无限创作空间。",
+        "features_title": "包含专业版所有功能，此外",
         "features": [
-          "300 积分，有效期 1 个月",
-          "内置 AI 业务功能",
-          "用户中心",
-          "积分系统",
-          "为你的 SaaS 售卖 API",
-          "后台管理系统",
-          "优先技术支持"
+          "1500 积分 / 月",
+          "全部高级模型 (Flux, SEED)",
+          "4K 图像生成",
+          "API 访问",
+          "批量生成",
+          "优先支持",
+          "新功能抢先体验"
         ],
         "interval": "month",
-        "amount": 24900,
+        "amount": 4990,
         "currency": "USD",
-        "price": "$249",
-        "original_price": "$299",
+        "price": "$49.90",
+        "original_price": "$69.90",
+        "currencies": [
+          {
+            "currency": "CNY",
+            "amount": 34900,
+            "price": "¥349",
+            "original_price": "¥489",
+            "payment_providers": ["stripe"]
+          }
+        ],
         "unit": "/ 月",
         "is_featured": false,
-        "tip": "按月付费，助你交付任何 AI SaaS 项目。",
+        "tip": "专业人士的超值之选！",
         "button": {
-          "title": "获取 ShipAny",
+          "title": "立即订阅",
           "url": "/#pricing",
           "icon": "RiFlashlightFill"
         },
-        "product_id": "premium-monthly",
-        "product_name": "ShipAny 模板高级版包月",
-        "credits": 300,
+        "product_id": "max-monthly",
+        "product_name": "Nano Banana 旗舰版包月",
+        "credits": 1500,
         "valid_days": 30,
         "group": "monthly",
-        "plan_name": "高级版"
+        "plan_name": "旗舰版"
       },
       {
-        "title": "入门版",
-        "description": "开启你的第一个 SaaS 创业项目。",
+        "title": "基础版",
+        "description": "适合业余爱好者和初学者。",
         "features_title": "包含",
         "features": [
-          "100 积分，有效期 1 年",
-          "NextJS 项目模板",
-          "SEO 友好结构",
-          "支持 Stripe 支付",
-          "Supabase 数据存储",
-          "Google Oauth & 一键登录",
-          "多语言（i18n）支持"
+          "1,800 积分 / 年（150/月）",
+          "Nano Banana 模型访问",
+          "720p 图像生成",
+          "社区画廊访问",
+          "标准处理速度",
+          "邮件支持"
         ],
         "interval": "year",
-        "amount": 82800,
+        "amount": 6588,
         "currency": "USD",
-        "price": "$69",
-        "original_price": "$89",
+        "price": "$5.49",
+        "original_price": "$7.90",
+        "currencies": [
+          {
+            "currency": "CNY",
+            "amount": 3900,
+            "price": "¥39",
+            "original_price": "¥49",
+            "payment_providers": ["stripe"]
+          }
+        ],
         "unit": "/ 月",
         "is_featured": false,
-        "tip": "按年付费，畅享无限项目部署！",
+        "tip": "年付立省30%！",
         "button": {
-          "title": "获取 ShipAny",
+          "title": "立即订阅",
           "url": "/#pricing",
           "icon": "RiFlashlightFill"
         },
-        "product_id": "starter-yearly",
-        "product_name": "ShipAny 模板入门版包年",
-        "credits": 1200,
+        "product_id": "basic-yearly",
+        "product_name": "Nano Banana 基础版包年",
+        "credits": 1800,
         "valid_days": 365,
         "group": "yearly",
-        "plan_name": "入门版"
+        "plan_name": "基础版"
       },
       {
-        "title": "标准版",
-        "description": "快速交付你的 SaaS 创业项目。",
+        "title": "专业版",
+        "description": "为认真创作者和专业人士打造。",
         "label": "热门",
-        "features_title": "包含入门版功能，此外",
+        "features_title": "包含基础版所有功能，此外",
         "features": [
-          "200 积分，有效期 1 年",
-          "支持 Vercel 或 Cloudflare 部署",
-          "自动生成隐私政策&服务条款",
-          "集成 Google Analytics",
-          "集成 Google Search Console",
-          "Discord 技术社区",
-          "首个上线项目技术支持",
-          "终身免费更新"
+          "6,000 积分 / 年（500/月）",
+          "Nano Banana 2 Pro 模型访问",
+          "1080p 图像生成",
+          "无水印",
+          "商业使用权",
+          "优先处理",
+          "Discord 社区访问"
         ],
         "interval": "year",
-        "amount": 154800,
+        "amount": 16788,
         "currency": "USD",
-        "price": "$129",
-        "original_price": "$169",
+        "price": "$13.99",
+        "original_price": "$19.90",
+        "currencies": [
+          {
+            "currency": "CNY",
+            "amount": 9900,
+            "price": "¥99",
+            "original_price": "¥139",
+            "payment_providers": ["stripe"]
+          }
+        ],
         "unit": "/ 月",
         "is_featured": true,
-        "tip": "按年付费，极速上线你的 SaaS 项目。",
+        "tip": "年付立省30%！",
         "button": {
-          "title": "获取 ShipAny",
+          "title": "立即订阅",
           "url": "/#pricing",
           "icon": "RiFlashlightFill"
         },
-        "product_id": "standard-yearly",
-        "product_name": "ShipAny 模板标准版包年",
-        "credits": 2400,
+        "product_id": "pro-yearly",
+        "product_name": "Nano Banana 专业版包年",
+        "credits": 6000,
         "valid_days": 365,
         "group": "yearly",
-        "plan_name": "标准版"
+        "plan_name": "专业版"
       },
       {
-        "title": "高级版",
-        "description": "交付任意 AI SaaS 创业项目。",
-        "features_title": "包含标准版功能，此外",
+        "title": "旗舰版",
+        "description": "为高级用户提供无限创作空间。",
+        "features_title": "包含专业版所有功能，此外",
         "features": [
-          "300 积分，有效期 1 年",
-          "内置 AI 业务功能",
-          "用户中心",
-          "积分系统",
-          "为你的 SaaS 售卖 API",
-          "后台管理系统",
-          "优先技术支持"
+          "18,000 积分 / 年（1500/月）",
+          "全部高级模型 (Flux, SEED)",
+          "4K 图像生成",
+          "API 访问",
+          "批量生成",
+          "优先支持",
+          "新功能抢先体验"
         ],
         "interval": "year",
-        "amount": 226800,
+        "amount": 41988,
         "currency": "USD",
-        "price": "$189",
-        "original_price": "$249",
+        "price": "$34.99",
+        "original_price": "$49.90",
+        "currencies": [
+          {
+            "currency": "CNY",
+            "amount": 24900,
+            "price": "¥249",
+            "original_price": "¥349",
+            "payment_providers": ["stripe"]
+          }
+        ],
         "unit": "/ 月",
         "is_featured": false,
-        "tip": "按年付费，助你交付任何 AI SaaS 项目。",
+        "tip": "年付立省30%！",
         "button": {
-          "title": "获取 ShipAny",
+          "title": "立即订阅",
           "url": "/#pricing",
           "icon": "RiFlashlightFill"
         },
-        "product_id": "premium-yearly",
-        "product_name": "ShipAny 模板高级版包年",
-        "credits": 3600,
+        "product_id": "max-yearly",
+        "product_name": "Nano Banana 旗舰版包年",
+        "credits": 18000,
         "valid_days": 365,
         "group": "yearly",
-        "plan_name": "高级版"
+        "plan_name": "旗舰版"
       }
     ]
   },
