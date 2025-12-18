@@ -3,13 +3,59 @@
 import { useMemo, useState } from 'react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
+import { toast } from 'sonner';
 
-import { Link } from '@/core/i18n/navigation';
+import { Link, useRouter } from '@/core/i18n/navigation';
 import { SmartIcon } from '@/shared/blocks/common/smart-icon';
 import { Button } from '@/shared/components/ui/button';
 import { Card, CardContent } from '@/shared/components/ui/card';
 import { cn } from '@/shared/lib/utils';
 import { Section } from '@/shared/types/blocks/landing';
+
+// Adaptive image component that maintains natural aspect ratio
+function AdaptiveImage({
+  src,
+  alt,
+  className,
+}: {
+  src: string;
+  alt: string;
+  className?: string;
+}) {
+  const [aspectRatio, setAspectRatio] = useState<number>(4 / 3);
+  const [loaded, setLoaded] = useState(false);
+
+  return (
+    <div
+      className={cn('relative w-full overflow-hidden', className)}
+      style={{ aspectRatio: aspectRatio }}
+    >
+      <Image
+        src={src}
+        alt={alt}
+        fill
+        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+        className={cn(
+          'object-cover transition-all duration-500',
+          loaded ? 'opacity-100' : 'opacity-0'
+        )}
+        onLoad={(e) => {
+          const img = e.currentTarget;
+          if (img.naturalWidth && img.naturalHeight) {
+            // Clamp aspect ratio between 3:4 (portrait) and 2:1 (landscape)
+            const ratio = img.naturalWidth / img.naturalHeight;
+            const clampedRatio = Math.max(0.75, Math.min(2, ratio));
+            setAspectRatio(clampedRatio);
+          }
+          setLoaded(true);
+        }}
+      />
+      {!loaded && (
+        <div className="absolute inset-0 bg-muted/50 animate-pulse" />
+      )}
+    </div>
+  );
+}
 
 export function Showcases({
   section,
@@ -18,6 +64,26 @@ export function Showcases({
   section: Section;
   className?: string;
 }) {
+  const router = useRouter();
+
+  const buildHrefWithPrompt = (url: string, prompt?: string) => {
+    const safeUrl = url?.trim() || '/nanobanana-ai-image-generator';
+    if (!prompt?.trim()) return safeUrl;
+    const [path, search = ''] = safeUrl.split('?');
+    const params = new URLSearchParams(search);
+    params.set('prompt', prompt.trim());
+    return `${path}?${params.toString()}`;
+  };
+
+  const setPromptSessionStorage = (prompt?: string) => {
+    if (!prompt?.trim()) return;
+    try {
+      window.sessionStorage.setItem('nanobanana:prefill-prompt', prompt.trim());
+    } catch {
+      // ignore
+    }
+  };
+
   const groups = (section as any).groups || [];
   const [selectedGroup, setSelectedGroup] = useState<string>(
     groups.length > 0 ? groups[0].name : ''
@@ -111,10 +177,14 @@ export function Showcases({
         </motion.div>
       )}
 
-      <div className="container grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+      {/* Masonry-style grid with columns */}
+      <div className="container columns-1 gap-6 md:columns-2 lg:columns-3">
         {filteredItems.length > 0 ? (
           filteredItems.map((item, index) => {
             const hasButton = !!(item as any).button;
+            const itemPrompt = (item as any).prompt as string | undefined;
+            const href = buildHrefWithPrompt(item.url || '', itemPrompt);
+
             const cardContent = (
               <motion.div
                 initial={{ opacity: 0, y: 30 }}
@@ -128,18 +198,59 @@ export function Showcases({
               >
                 <Card className="dark:hover:shadow-primary/10 overflow-hidden p-0 transition-all hover:shadow-lg">
                   <CardContent className="p-0">
+                    {/* Adaptive image that respects natural aspect ratio */}
                     <motion.div
-                      className="relative aspect-16/10 w-full overflow-hidden"
-                      whileHover={{ scale: 1.05 }}
+                      className="relative w-full overflow-hidden"
+                      whileHover={{ scale: 1.02 }}
                       transition={{ duration: 0.3 }}
                     >
-                      <Image
+                      <AdaptiveImage
                         src={item.image?.src ?? ''}
                         alt={item.image?.alt ?? ''}
-                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                        fill
-                        className="rounded-t-lg object-cover transition-transform duration-300"
                       />
+
+                      {itemPrompt?.trim() && (
+                        <div className="absolute inset-0 flex flex-col justify-end bg-gradient-to-t from-black/80 via-black/40 to-transparent p-4 opacity-0 transition-opacity duration-300 group-hover:opacity-100 group-focus-within:opacity-100">
+                          <p className="line-clamp-5 text-xs leading-relaxed text-white/90">
+                            {itemPrompt.trim()}
+                          </p>
+                          <div className="mt-3 flex gap-2">
+                            <Button
+                              type="button"
+                              size="sm"
+                              variant="secondary"
+                              className="h-8 px-3"
+                              onClick={async (e) => {
+                                e.preventDefault();
+                                e.stopPropagation();
+                                try {
+                                  await navigator.clipboard.writeText(
+                                    itemPrompt.trim()
+                                  );
+                                  toast.success('Prompt copied');
+                                } catch {
+                                  toast.error('Copy failed');
+                                }
+                              }}
+                            >
+                              Copy prompt
+                            </Button>
+                            <Button
+                              type="button"
+                              size="sm"
+                              className="h-8 px-3"
+                              onClick={(e) => {
+                                e.preventDefault();
+                                e.stopPropagation();
+                                setPromptSessionStorage(itemPrompt);
+                                router.push(href);
+                              }}
+                            >
+                              Use prompt
+                            </Button>
+                          </div>
+                        </div>
+                      )}
                     </motion.div>
                     <div className="p-6">
                       <h3 className="mb-2 line-clamp-1 text-xl font-semibold text-balance">
@@ -181,16 +292,33 @@ export function Showcases({
             );
 
             return hasButton ? (
-              <div key={index}>{cardContent}</div>
-            ) : (
-              <Link key={index} href={item.url || ''} target={item.target}>
+              <div key={index} className="group mb-6 break-inside-avoid">
                 {cardContent}
-              </Link>
+              </div>
+            ) : (
+              <div
+                key={index}
+                className="group mb-6 break-inside-avoid cursor-pointer"
+                role="link"
+                tabIndex={0}
+                onClick={() => {
+                  setPromptSessionStorage(itemPrompt);
+                  router.push(href);
+                }}
+                onKeyDown={(e) => {
+                  if (e.key !== 'Enter' && e.key !== ' ') return;
+                  e.preventDefault();
+                  setPromptSessionStorage(itemPrompt);
+                  router.push(href);
+                }}
+              >
+                {cardContent}
+              </div>
             );
           })
         ) : (
           <motion.div
-            className="text-muted-foreground col-span-full text-center"
+            className="text-muted-foreground text-center"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}

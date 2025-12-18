@@ -19,12 +19,12 @@ export function Footer({ footer }: { footer: FooterType }) {
     >
       <div className="container space-y-8 overflow-x-hidden">
         <div className="grid min-w-0 gap-12 md:grid-cols-5">
-          <div className="min-w-0 space-y-4 break-words md:col-span-2 md:space-y-6">
+          <div className="min-w-0 space-y-4 break-words md:col-span-2">
             {footer.brand ? <BrandLogo brand={footer.brand} /> : null}
 
             {footer.brand?.description ? (
               <p
-                className="text-muted-foreground text-sm text-balance break-words"
+                className="text-muted-foreground text-sm leading-relaxed text-balance break-words max-w-sm"
                 dangerouslySetInnerHTML={{ __html: footer.brand.description }}
               />
             ) : null}
@@ -56,7 +56,6 @@ export function Footer({ footer }: { footer: FooterType }) {
 
         <div className="flex min-w-0 flex-wrap items-center gap-4 sm:gap-8">
           {footer.show_built_with !== false ? <BuiltWith /> : null}
-          <div className="min-w-0 flex-1" />
           {footer.show_theme !== false ? <ThemeToggler type="toggle" /> : null}
           {footer.show_locale !== false ? (
             <LocaleSelector type="button" />

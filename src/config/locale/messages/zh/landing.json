@@ -4,7 +4,7 @@
     "brand": {
       "title": "BananaPro",
       "logo": {
-        "src": "/logo.png",
+        "src": "/logo-banana.svg",
         "alt": "BananaPro - Nano Banana AI 工具",
         "width": 100,
         "height": 100
@@ -149,6 +149,70 @@
       }
     ]
   },
+  "showcase_gallery": {
+    "block": "image-gallery",
+    "id": "showcase-gallery",
+    "title": "Nano Banana 创作的 AI 艺术作品",
+    "label": "画廊",
+    "description": "看看创作者们用 <strong>Nano Banana AI</strong> 创作了什么。从逼真人像到绝美风景。",
+    "items": [
+      {
+        "title": "逼真人像",
+        "description": "具有自然皮肤纹理的超现实美容人像",
+        "image": {
+          "src": "/imgs/gallery/portrait-1.jpg",
+          "alt": "逼真人像 - Nano Banana AI"
+        },
+        "prompt": "具有自然皮肤纹理的年轻女性超现实近距离美容肖像"
+      },
+      {
+        "title": "电影多角度场景",
+        "description": "色彩和氛围一致的电影场景",
+        "image": {
+          "src": "/imgs/gallery/cinematic-1.jpg",
+          "alt": "电影场景 - Nano Banana AI"
+        },
+        "prompt": "色彩分级一致的电影多角度场景生成"
+      },
+      {
+        "title": "产品可视化",
+        "description": "专业手办产品展示布局",
+        "image": {
+          "src": "/imgs/gallery/product-1.jpg",
+          "alt": "产品展示 - Nano Banana AI"
+        },
+        "prompt": "可收藏手办的产品介绍布局"
+      },
+      {
+        "title": "四季风景",
+        "description": "一个场景中四季的无缝融合",
+        "image": {
+          "src": "/imgs/gallery/landscape-1.jpg",
+          "alt": "四季 - Nano Banana AI"
+        },
+        "prompt": "四季无缝融合的东京超现实数字插画"
+      },
+      {
+        "title": "设计工作流程",
+        "description": "从草图到 AI 生成的最终产品",
+        "image": {
+          "src": "/imgs/gallery/design-1.jpg",
+          "alt": "设计工作流程 - Nano Banana AI"
+        },
+        "prompt": "从草图到 AI 渲染的多视图沙发设计"
+      },
+      {
+        "title": "戏剧性人像",
+        "description": "具有精细皱纹细节的黑白人像",
+        "image": {
+          "src": "/imgs/gallery/portrait-2.jpg",
+          "alt": "戏剧性人像 - Nano Banana Pro"
+        },
+        "prompt": "具有侧光和精细细节的老年男子黑白人像"
+      }
+    ],
+    "className": "bg-muted"
+  },
   "introduce": {
     "block": "features-list",
     "id": "introduce",
@@ -156,17 +220,17 @@
     "label": "产品介绍",
     "description": "BananaPro 是您进入 <strong>Nano Banana AI</strong> 世界的入口，专为充分利用 <strong>Google Nano Banana</strong> 功能进行专业图片生成而设计。",
     "image": {
-      "src": "/imgs/features/landing-page.png",
+      "src": "/imgs/gallery/portrait-1.jpg",
       "alt": "Nano Banana Pro 控制台"
     },
     "items": [
       {
-        "title": "Nano Banana AI 生成",
+        "title": "AI 图片生成",
         "description": "使用以高保真度著称的核心 <strong>Nano Banana AI</strong> 引擎创建令人惊叹的视觉作品。",
         "icon": "RiRobot2Line",
         "image": {
-          "src": "/imgs/features/1.png",
-          "alt": "Nano Banana AI 生成"
+          "src": "/imgs/gallery/portrait-1.jpg",
+          "alt": "AI 图片生成"
         }
       },
       {
@@ -174,17 +238,17 @@
         "description": "与其他工具不同，<strong>Nano Banana Pro</strong> 帮助您在多个场景中保持角色一致性。",
         "icon": "RiUserSmileLine",
         "image": {
-          "src": "/imgs/features/2.png",
+          "src": "/imgs/comparison/portrait-after.jpg",
           "alt": "一致角色"
         }
       },
       {
-        "title": "Nano Banana Google 集成",
+        "title": "Google 云集成",
         "description": "无缝连接 <strong>Google Nano Banana</strong> 云基础设施，实现快速可靠的渲染。",
         "icon": "RiCloudyFill",
         "image": {
-          "src": "/imgs/features/3.png",
-          "alt": "Google 集成"
+          "src": "/imgs/gallery/cinematic-1.jpg",
+          "alt": "Google 云集成"
         }
       },
       {
@@ -192,12 +256,63 @@
         "description": "先进的 <strong>Nano Banana</strong> 功能允许在 2D 空间中精确定位和旋转 3D 物体。",
         "icon": "RiBox3Line",
         "image": {
-          "src": "/imgs/features/4.png",
+          "src": "/imgs/gallery/product-1.jpg",
           "alt": "3D 操控"
         }
       }
     ],
     "className": "bg-muted"
+  },
+  "comparison": {
+    "block": "image-comparison",
+    "id": "comparison",
+    "title": "感受 Nano Banana Pro 的差异",
+    "label": "前后对比",
+    "description": "对比 <strong>Nano Banana</strong> 到 <strong>Nano Banana Pro</strong> 的进化。体验真实感、细节和文字渲染的显著提升。",
+    "items": [
+      {
+        "title": "人像真实感增强",
+        "description": "Pro 版本增加了更逼真的皮肤纹理、头发细节和反射",
+        "before": {
+          "src": "/imgs/comparison/portrait-before.jpg",
+          "alt": "之前 - Nano Banana",
+          "label": "Nano Banana"
+        },
+        "after": {
+          "src": "/imgs/comparison/portrait-after.jpg",
+          "alt": "之后 - Nano Banana Pro",
+          "label": "Nano Banana Pro"
+        }
+      },
+      {
+        "title": "艺术风格与透视",
+        "description": "Pro 版本改进了透视缩短和风格一致性",
+        "before": {
+          "src": "/imgs/comparison/art-before.jpg",
+          "alt": "之前 - 艺术风格",
+          "label": "Nano Banana"
+        },
+        "after": {
+          "src": "/imgs/comparison/art-after.jpg",
+          "alt": "之后 - 艺术风格 Pro",
+          "label": "Nano Banana Pro"
+        }
+      },
+      {
+        "title": "文字渲染质量",
+        "description": "Pro 版本实现近乎完美的 4K 分辨率文字渲染",
+        "before": {
+          "src": "/imgs/comparison/text-before.jpg",
+          "alt": "之前 - 文字模糊",
+          "label": "Nano Banana"
+        },
+        "after": {
+          "src": "/imgs/comparison/text-after.jpg",
+          "alt": "之后 - 文字清晰",
+          "label": "Nano Banana Pro"
+        }
+      }
+    ]
   },
   "benefits": {
     "block": "features-accordion",
@@ -207,29 +322,29 @@
     "description": "使用专为 <strong>Nano Banana AI</strong> 生态系统构建的工具最大化您的创意产出。",
     "items": [
       {
-        "title": "掌握 Nano Banana AI",
+        "title": "掌握 AI 生成",
         "description": "我们的平台消除了原始提示词的复杂性，为您提供专业级界面来控制 <strong>Nano Banana</strong> 模型。",
         "icon": "RiMagicLine",
         "image": {
-          "src": "/imgs/features/user-billing.png",
-          "alt": "掌握 Nano Banana"
+          "src": "/imgs/gallery/design-1.jpg",
+          "alt": "掌握 AI 生成"
         }
       },
       {
         "title": "专业工作流程",
-        "description": "从 <strong>Nano Banana</strong> 草图到最终 4K 生产资源，在这里管理您的整个流程。",
+        "description": "从初始草图到最终 4K 生产资源，在这里管理您的整个创意流程。",
         "icon": "RiClapperboardAiLine",
         "image": {
-          "src": "/imgs/features/admin-settings.png",
+          "src": "/imgs/gallery/landscape-1.jpg",
           "alt": "专业工作流程"
         }
       },
       {
         "title": "社区与支持",
-        "description": "加入最大的 <strong>Nano Banana Google</strong> 爱好者社区，获得 24/7 全天候支持。",
+        "description": "加入最大的 AI 图像爱好者社区，获得团队 24/7 全天候支持。",
         "icon": "RiDiscussLine",
         "image": {
-          "src": "/imgs/features/landing-page.png",
+          "src": "/imgs/gallery/portrait-2.jpg",
           "alt": "社区"
         }
       }
@@ -241,7 +356,7 @@
     "title": "如何使用 Nano Banana Pro",
     "description": "只需三步，开始使用 <strong>Google Nano Banana</strong> 创作：",
     "image": {
-      "src": "/imgs/features/1.png",
+      "src": "/imgs/gallery/portrait-1.jpg",
       "alt": "使用演示"
     },
     "image_position": "left",
@@ -251,15 +366,15 @@
         "title": "注册 BananaPro",
         "description": "创建账户，立即访问 <strong>Nano Banana Pro</strong> 控制台。",
         "image": {
-          "src": "/imgs/features/5.png",
+          "src": "/imgs/comparison/portrait-before.jpg",
           "alt": "注册"
         }
       },
       {
-        "title": "选择 Nano Banana 模型",
+        "title": "选择模型",
         "description": "根据速度和质量需求，选择 <strong>Nano Banana</strong> Flash 或 Pro 版本。",
         "image": {
-          "src": "/imgs/features/6.png",
+          "src": "/imgs/comparison/art-before.jpg",
           "alt": "选择模型"
         }
       },
@@ -267,15 +382,15 @@
         "title": "输入提示词",
         "description": "描述您的创意。我们的 <strong>Nano Banana AI</strong> 优化器将增强您的提示词以获得最佳效果。",
         "image": {
-          "src": "/imgs/features/7.png",
+          "src": "/imgs/gallery/cinematic-1.jpg",
           "alt": "输入提示词"
         }
       },
       {
         "title": "生成与编辑",
-        "description": "从 <strong>Nano Banana Google</strong> 服务器即时获取结果，并使用我们的内置工具进行优化。",
+        "description": "从 Google 云服务器即时获取结果，并使用我们的内置编辑工具进行优化。",
         "image": {
-          "src": "/imgs/features/8.png",
+          "src": "/imgs/gallery/product-1.jpg",
           "alt": "生成"
         }
       }
@@ -288,53 +403,94 @@
     "description": "您在 <strong>Nano Banana AI</strong> 图片生成中取得成功所需的一切。",
     "items": [
       {
-        "title": "Nano Banana 原生",
+        "title": "原生架构",
         "description": "从零开始为 <strong>Nano Banana</strong> 架构构建。",
         "icon": "RiCpuLine"
       },
       {
-        "title": "Google Nano Banana 云",
+        "title": "Google 云 TPU",
         "description": "直连 <strong>Google Nano Banana</strong> TPU，实现闪电般的生成速度。",
         "icon": "RiCloudLine"
       },
       {
         "title": "提示词魔法",
-        "description": "专为 <strong>Nano Banana AI</strong> 设计的智能提示词工程工具。",
+        "description": "专为 AI 图片生成优化的智能提示词工程工具。",
         "icon": "RiMagicFill"
       },
       {
         "title": "商业授权",
-        "description": "所有 <strong>Nano Banana Pro</strong> 创作均享有完整商业使用权。",
+        "description": "所有 AI 生成作品均享有完整商业使用权。",
         "icon": "RiCopyrightLine"
       },
       {
-        "title": "作品展示",
-        "description": "与世界分享您的 <strong>Nano Banana</strong> 杰作。",
+        "title": "画廊展示",
+        "description": "与全球创意社区分享您的 AI 杰作。",
         "icon": "RiGalleryLine"
       },
       {
         "title": "API 访问",
-        "description": "开发者友好的 API，便于 <strong>Nano Banana Google</strong> 集成。",
+        "description": "开发者友好的 API，便于无缝集成到您的工作流程。",
         "icon": "RiCodeBoxLine"
       }
     ]
   },
+  "prompt_showcase": {
+    "block": "prompt-gallery",
+    "id": "prompt-showcase",
+    "title": "热门 Nano Banana 提示词",
+    "label": "提示词",
+    "description": "尝试这些顶级 <strong>Nano Banana AI</strong> 创作者使用的热门提示词。",
+    "items": [
+      {
+        "title": "逼真人像",
+        "prompt": "具有自然皮肤纹理的年轻女性超现实近距离美容肖像。柔和的漫射工作室照明，极简妆容。浅蓝色眼睛，直眉，鼻子和脸颊上自然的雀斑，略带红晕的脸颊。自然哑光唇，放松的表情，居中构图。浅景深，眼睛和皮肤细节清晰对焦。干净的白色背景，高分辨率护肤摄影风格。",
+        "image": {
+          "src": "/imgs/gallery/portrait-1.jpg",
+          "alt": "逼真人像结果"
+        },
+        "category": "人像"
+      },
+      {
+        "title": "手办转换",
+        "prompt": "将插画转换为逼真的 PVC 手办。保持原始角色的设计、姿势、比例和颜色完全相同。渲染具有详细阴影的逼真涂装表面。包含制造手办典型的微妙接缝线。头发和衣服应用光泽高光，皮肤应用哑光质感。",
+        "image": {
+          "src": "/imgs/gallery/product-1.jpg",
+          "alt": "手办转换结果"
+        },
+        "category": "产品"
+      },
+      {
+        "title": "四季风景",
+        "prompt": "超现实数字插画：从隅田川眺望未来主义东京天空树的历史浅草水岸。将此场景描绘为从左到右循环穿越四季的无缝构图。左侧（冬季）：寒冷的雪景，积雪覆盖的历史建筑，冰冷多云的元素。中左（春季）：融雪，新绿嫩芽，盛开的樱花。中右（夏季）：茂密的绿色植被，明亮的阳光，河面强烈的反射。右侧（秋季）：充满活力的金色、橙色、红色树叶。季节之间没有可见边界，平滑过渡。电影级光照，8K 分辨率，高度细腻的纹理。",
+        "image": {
+          "src": "/imgs/gallery/landscape-1.jpg",
+          "alt": "四季结果"
+        },
+        "category": "风景"
+      }
+    ],
+    "className": "bg-muted"
+  },
   "stats": {
     "id": "stats",
-    "title": "创作者信赖 Nano Banana Pro",
+    "title": "创作者信赖 BananaPro",
     "description": "加入 <strong>Nano Banana AI</strong> 创作者的革命。",
     "items": [
       {
-        "title": "全新",
-        "description": "平台上线"
+        "title": "1M+",
+        "description": "活跃创作者"
       },
       {
-        "title": "100+",
-        "description": "专业模板"
+        "title": "10M+",
+        "description": "已生成图片"
       },
       {
         "title": "24/7",
         "description": "AI 处理"
+      },
+      {
+        "title": "4K",
+        "description": "最高分辨率"
       }
     ],
     "className": "bg-muted"
@@ -411,34 +567,34 @@
         "answer": "<strong>Nano Banana AI</strong> 是最新一代先进图像模型的社区名称，特指以卓越推理能力和一致性著称的 <strong>Google Nano Banana</strong>（Gemini）技术。"
       },
       {
-        "question": "Nano Banana Pro 可以免费使用吗？",
-        "answer": "我们提供免费套餐，让您探索 <strong>Nano Banana</strong> 功能。对于重度使用和高级 <strong>Nano Banana Pro</strong> 功能，我们有实惠的订阅方案。"
+        "question": "BananaPro 可以免费使用吗？",
+        "answer": "我们提供免费套餐，让您探索 <strong>Nano Banana</strong> 功能。对于重度使用和高级功能，我们有实惠的订阅方案。"
       },
       {
         "question": "Nano Banana 与 Midjourney 有什么不同？",
         "answer": "<strong>Nano Banana</strong> 在提示词遵循和特定编辑任务方面表现出色，例如在不同姿势中保持角色面部一致，这是 <strong>Google Nano Banana</strong> 模型的关键优势。"
       },
       {
-        "question": "我可以商用 Nano Banana 图片吗？",
-        "answer": "可以！通过 <strong>Nano Banana Pro</strong> 生成的所有图片都享有完整商业使用权，您可以将 <strong>Nano Banana AI</strong> 作品用于任何项目。"
+        "question": "我可以将生成的图片用于商业用途吗？",
+        "answer": "可以！通过 BananaPro 生成的所有图片都享有完整商业使用权，您可以将 <strong>Nano Banana AI</strong> 作品用于任何项目。"
       },
       {
         "question": "你们使用官方 Google Nano Banana 模型吗？",
         "answer": "是的，我们的平台基于官方 <strong>Google Nano Banana</strong> API 构建，确保您获得最高质量的结果。"
       },
       {
-        "question": "Nano Banana 与其他工具兼容吗？",
-        "answer": "BananaPro 创建的是标准图片格式，可与您喜爱的所有设计工具配合使用。<strong>Nano Banana</strong> 完美融入现有工作流程。"
+        "question": "与其他工具兼容吗？",
+        "answer": "BananaPro 创建的是标准图片格式，可与您喜爱的所有设计工具配合使用，完美融入现有工作流程。"
       }
     ]
   },
   "cta": {
     "id": "cta",
-    "title": "立即开始使用 Nano Banana Pro 创作",
-    "description": "加入数千名正在掌握 <strong>Nano Banana AI</strong> 的用户。",
+    "title": "立即开始使用 BananaPro 创作",
+    "description": "加入数千名正在掌握 <strong>Nano Banana AI</strong> 图片生成的用户。",
     "buttons": [
       {
-        "title": "获取 Nano Banana Pro",
+        "title": "立即开始",
         "url": "/pricing",
         "target": "_self",
         "icon": "Zap"
@@ -455,8 +611,8 @@
   },
   "subscribe": {
     "id": "subscribe",
-    "title": "订阅 Nano Banana 更新",
-    "description": "获取最新的 <strong>Nano Banana</strong> 技巧、教程和模型资讯。",
+    "title": "订阅更新",
+    "description": "获取最新的 <strong>Nano Banana</strong> 技巧、教程和 AI 模型资讯。",
     "submit": {
       "input": {
         "placeholder": "输入您的邮箱"
@@ -472,9 +628,9 @@
     "id": "footer",
     "brand": {
       "title": "BananaPro",
-      "description": "BananaPro 是领先的 <strong>Nano Banana AI</strong> 图片生成平台。我们用最好的 <strong>Google Nano Banana</strong> 工具赋能创作者。",
+      "description": "BananaPro 是领先的 <strong>Nano Banana AI</strong> 图片生成平台。我们用最好的 Google AI 工具赋能创作者。",
       "logo": {
-        "src": "/logo.png",
+        "src": "/logo-banana.svg",
         "alt": "BananaPro",
         "width": 1024,
         "height": 1024
@@ -580,6 +736,8 @@
         }
       ]
     },
+    "copyright": "© 2025 BananaPro. 保留所有权利。",
+    "show_built_with": false,
     "show_theme": true,
     "show_locale": true
   }

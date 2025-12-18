@@ -2,10 +2,9 @@
 
 import { useState } from 'react';
 import Image from 'next/image';
-import { useRouter } from 'next/navigation';
 import { ArrowRight } from 'lucide-react';
 
-import { Link } from '@/core/i18n/navigation';
+import { Link, useRouter } from '@/core/i18n/navigation';
 import { SmartIcon } from '@/shared/blocks/common';
 import { Button } from '@/shared/components/ui/button';
 import { Highlighter } from '@/shared/components/ui/highlighter';
@@ -26,6 +25,11 @@ export function Hero({
 
   const handleGenerate = () => {
     if (prompt.trim()) {
+      try {
+        window.sessionStorage.setItem('nanobanana:prefill-prompt', prompt.trim());
+      } catch {
+        // ignore
+      }
       router.push(`/nanobanana-ai-image-generator?prompt=${encodeURIComponent(prompt.trim())}`);
     } else {
       router.push('/nanobanana-ai-image-generator');

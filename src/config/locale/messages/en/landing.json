@@ -68,7 +68,7 @@
     "id": "hero",
     "title": "Nano Banana Pro: The Ultimate Google Nano Banana AI Image Generator",
     "highlight_text": "Nano Banana Pro",
-    "description": "Unleash the full potential of Nano Banana AI technology. BananaPro is the premier tool for creating, editing, and mastering images using the latest Google Nano Banana models. Experience consistent characters and 3D precision.",
+    "description": "Unleash the full potential of <strong>Nano Banana AI</strong> technology. BananaPro is the premier tool for creating, editing, and mastering images using the latest <strong>Google Nano Banana</strong> models. Experience consistent characters and 3D precision.",
     "announcement": {
       "badge": "New",
       "title": "Nano Banana 2.5 Flash is Live",
@@ -80,43 +80,12 @@
       "hints": ["Cyberpunk Style", "3D Render", "Anime Art", "Oil Painting", "Photorealistic"]
     },
     "tip": "Join 10,000+ creators using Nano Banana Google tools",
-    "buttons": [
-      {
-        "title": "View Gallery",
-        "icon": "Image",
-        "url": "/showcases",
-        "target": "_self",
-        "variant": "ghost"
-      },
-      {
-        "title": "Learn More",
-        "icon": "BookOpenText",
-        "url": "/blog/what-is-nano-banana",
-        "target": "_self",
-        "variant": "ghost"
-      }
-    ],
     "show_avatars": true,
     "avatars_tip": "50k+ images generated with Nano Banana AI",
-    "show_award": false,
-    "image": {
-      "src": "/imgs/hero-banana.png",
-      "alt": "Nano Banana Pro Studio Interface",
-      "width": 1200,
-      "height": 800
-    },
-    "image_invert": {
-      "src": "/imgs/hero-banana.png",
-      "alt": "Nano Banana Pro Studio Interface",
-      "width": 1200,
-      "height": 800
-    },
-    "background_image": {
-      "src": "/imgs/hero-banana.png",
-      "alt": "Nano Banana Background"
-    }
+    "show_award": false
   },
   "logos": {
+    "id": "logos",
     "title": "Powered by the world's most advanced AI image generation models",
     "items": [
       {
@@ -149,69 +118,184 @@
       }
     ]
   },
+  "showcase_gallery": {
+    "block": "image-gallery",
+    "id": "showcase-gallery",
+    "sr_only_title": "Nano Banana AI Gallery - AI Generated Art Examples",
+    "title": "AI Art Created with Nano Banana",
+    "label": "Gallery",
+    "description": "See what creators are making with <strong>Nano Banana AI</strong>. Hover to see the prompt!",
+    "items": [
+      {
+        "title": "Photorealistic Portrait",
+        "description": "Ultra-realistic beauty portrait with natural skin texture",
+        "image": {
+          "src": "/imgs/gallery/portrait-1.jpg",
+          "alt": "Photorealistic Portrait - Nano Banana AI"
+        },
+        "prompt": "Ultra-realistic close-up beauty portrait of a young woman with natural skin texture. Soft diffused studio lighting, minimal makeup. Light blue eyes, straight brows, natural freckles across nose and cheeks, slightly flushed rosy cheeks."
+      },
+      {
+        "title": "Cinematic Multi-Angle",
+        "description": "Movie scene with consistent colors and atmosphere",
+        "image": {
+          "src": "/imgs/gallery/cinematic-1.jpg",
+          "alt": "Cinematic Scene - Nano Banana AI"
+        },
+        "prompt": "Cinematic multi-angle scene generation. Same character shown from multiple camera angles in a grid layout. Consistent color grading with warm tones. Professional film lighting setup."
+      },
+      {
+        "title": "Product Visualization",
+        "description": "Professional figure product showcase layout",
+        "image": {
+          "src": "/imgs/gallery/product-1.jpg",
+          "alt": "Product Showcase - Nano Banana AI"
+        },
+        "prompt": "Transform the illustration into a photorealistic PVC figure. Keep the original character's design, pose, proportions, and colors exactly the same. Render realistic painted surfaces with detailed shading."
+      },
+      {
+        "title": "Four Seasons Landscape",
+        "description": "Seamless blend of all four seasons in one scene",
+        "image": {
+          "src": "/imgs/gallery/landscape-1.jpg",
+          "alt": "Four Seasons - Nano Banana AI"
+        },
+        "prompt": "Ultra-realistic digital illustration: Historical Asakusa waterfront viewed across the Sumida River towards the futuristic Tokyo Skytree. Four seasons blended seamlessly from left to right."
+      },
+      {
+        "title": "Design Workflow",
+        "description": "From sketch to AI-generated final product",
+        "image": {
+          "src": "/imgs/gallery/design-1.jpg",
+          "alt": "Design Workflow - Nano Banana AI"
+        },
+        "prompt": "Multi-view furniture design process. Show progression from initial pencil sketch to detailed line drawing to fully rendered 3D visualization. Modern minimalist sofa design."
+      },
+      {
+        "title": "Dramatic Portrait",
+        "description": "Black and white portrait with fine wrinkle details",
+        "image": {
+          "src": "/imgs/gallery/portrait-2.jpg",
+          "alt": "Dramatic Portrait - Nano Banana Pro"
+        },
+        "prompt": "Dramatic black and white portrait of an elderly man. Strong side lighting creating deep shadows. Ultra-detailed wrinkles and skin texture. High contrast, fine art photography style."
+      }
+    ]
+  },
   "introduce": {
     "block": "features-list",
     "id": "introduce",
     "title": "What is Nano Banana Pro?",
     "label": "Introduction",
-    "description": "BananaPro is your gateway to Nano Banana AI, specifically designed to leverage Google Nano Banana features for professional image generation.",
+    "description": "BananaPro is your gateway to <strong>Nano Banana AI</strong>, specifically designed to leverage <strong>Google Nano Banana</strong> features for professional image generation.",
     "image": {
-      "src": "/imgs/features/landing-page.png",
+      "src": "/imgs/gallery/portrait-1.jpg",
       "alt": "Nano Banana Pro Dashboard"
     },
     "items": [
       {
         "title": "AI Image Generation",
-        "description": "Create stunning visuals using the core Nano Banana AI engine renowned for high fidelity.",
+        "description": "Create stunning visuals using the core <strong>Nano Banana AI</strong> engine renowned for high fidelity.",
         "icon": "RiRobot2Line",
         "image": {
-          "src": "/imgs/features/1.png",
+          "src": "/imgs/gallery/portrait-1.jpg",
           "alt": "AI Image Generation"
         }
       },
       {
         "title": "Consistent Character Editing",
-        "description": "Unlike other tools, Nano Banana Pro helps you keep characters consistent across multiple scenes.",
+        "description": "Unlike other tools, <strong>Nano Banana Pro</strong> helps you keep characters consistent across multiple scenes.",
         "icon": "RiUserSmileLine",
         "image": {
-          "src": "/imgs/features/2.png",
+          "src": "/imgs/comparison/portrait-after.jpg",
           "alt": "Consistent Character"
         }
       },
       {
         "title": "Google Cloud Integration",
-        "description": "Seamlessly connected with Google Nano Banana cloud infrastructure for fast reliable renders.",
+        "description": "Seamlessly connected with <strong>Google Nano Banana</strong> cloud infrastructure for fast reliable renders.",
         "icon": "RiCloudyFill",
         "image": {
-          "src": "/imgs/features/3.png",
+          "src": "/imgs/gallery/cinematic-1.jpg",
           "alt": "Google Cloud Integration"
         }
       },
       {
         "title": "3D Object Manipulation",
-        "description": "Advanced Nano Banana capabilities allow specifically targeting and rotating 3D objects in 2D space.",
+        "description": "Advanced <strong>Nano Banana</strong> capabilities allow specifically targeting and rotating 3D objects in 2D space.",
         "icon": "RiBox3Line",
         "image": {
-          "src": "/imgs/features/4.png",
+          "src": "/imgs/gallery/product-1.jpg",
           "alt": "3D Manipulation"
         }
       }
     ],
     "className": "bg-muted"
   },
+  "comparison": {
+    "block": "image-comparison",
+    "id": "comparison",
+    "title": "See the Nano Banana Pro Difference",
+    "label": "Before & After",
+    "description": "Compare the evolution from <strong>Nano Banana</strong> to <strong>Nano Banana Pro</strong>. Experience dramatic improvements in realism, detail, and text rendering.",
+    "items": [
+      {
+        "title": "Portrait Realism Enhancement",
+        "description": "Pro version adds more realistic skin textures, hair details, and reflections",
+        "before": {
+          "src": "/imgs/comparison/portrait-before.jpg",
+          "alt": "Before - Nano Banana",
+          "label": "Nano Banana"
+        },
+        "after": {
+          "src": "/imgs/comparison/portrait-after.jpg",
+          "alt": "After - Nano Banana Pro",
+          "label": "Nano Banana Pro"
+        }
+      },
+      {
+        "title": "Art Style & Perspective",
+        "description": "Improved foreshortening and style consistency in Pro version",
+        "before": {
+          "src": "/imgs/comparison/art-before.jpg",
+          "alt": "Before - Art Style",
+          "label": "Nano Banana"
+        },
+        "after": {
+          "src": "/imgs/comparison/art-after.jpg",
+          "alt": "After - Art Style Pro",
+          "label": "Nano Banana Pro"
+        }
+      },
+      {
+        "title": "Text Rendering Quality",
+        "description": "Near-perfect text rendering in 4K resolution with Pro",
+        "before": {
+          "src": "/imgs/comparison/text-before.jpg",
+          "alt": "Before - Text Blurry",
+          "label": "Nano Banana"
+        },
+        "after": {
+          "src": "/imgs/comparison/text-after.jpg",
+          "alt": "After - Text Clear",
+          "label": "Nano Banana Pro"
+        }
+      }
+    ]
+  },
   "benefits": {
     "block": "features-accordion",
     "id": "benefits",
     "title": "Why Choose Nano Banana Pro?",
     "label": "Benefits",
-    "description": "Maximize your creative output with tools built specifically for the Nano Banana AI ecosystem.",
+    "description": "Maximize your creative output with tools built specifically for the <strong>Nano Banana AI</strong> ecosystem.",
     "items": [
       {
         "title": "Master AI Generation",
-        "description": "Our platform removes the complexity of raw prompts, giving you a studio interface to control Nano Banana models.",
+        "description": "Our platform removes the complexity of raw prompts, giving you a studio interface to control <strong>Nano Banana</strong> models.",
         "icon": "RiMagicLine",
         "image": {
-          "src": "/imgs/features/user-billing.png",
+          "src": "/imgs/gallery/design-1.jpg",
           "alt": "Master AI Generation"
         }
       },
@@ -220,7 +304,7 @@
         "description": "From initial sketches to final 4K production assets, manage your entire creative pipeline here.",
         "icon": "RiClapperboardAiLine",
         "image": {
-          "src": "/imgs/features/admin-settings.png",
+          "src": "/imgs/gallery/landscape-1.jpg",
           "alt": "Professional Workflows"
         }
       },
@@ -229,7 +313,7 @@
         "description": "Join the largest community of AI image enthusiasts and get 24/7 support from our team.",
         "icon": "RiDiscussLine",
         "image": {
-          "src": "/imgs/features/landing-page.png",
+          "src": "/imgs/gallery/portrait-2.jpg",
           "alt": "Community"
         }
       }
@@ -239,9 +323,9 @@
     "block": "features-step",
     "id": "usage",
     "title": "How to Use Nano Banana Pro",
-    "description": "Start creating with Google Nano Banana in three simple steps:",
+    "description": "Start creating with <strong>Google Nano Banana</strong> in three simple steps:",
     "image": {
-      "src": "/imgs/features/1.png",
+      "src": "/imgs/gallery/portrait-1.jpg",
       "alt": "Usage Demo"
     },
     "image_position": "left",
@@ -249,25 +333,25 @@
     "items": [
       {
         "title": "Sign Up for BananaPro",
-        "description": "Create your account to access the Nano Banana Pro dashboard immediately.",
+        "description": "Create your account to access the <strong>Nano Banana Pro</strong> dashboard immediately.",
         "image": {
-          "src": "/imgs/features/5.png",
+          "src": "/imgs/comparison/portrait-before.jpg",
           "alt": "Sign Up"
         }
       },
       {
         "title": "Select Your Model",
-        "description": "Choose between Nano Banana Flash or Pro versions depending on your speed and quality needs.",
+        "description": "Choose between <strong>Nano Banana</strong> Flash or Pro versions depending on your speed and quality needs.",
         "image": {
-          "src": "/imgs/features/6.png",
+          "src": "/imgs/comparison/art-before.jpg",
           "alt": "Select Model"
         }
       },
       {
         "title": "Enter Your Prompt",
-        "description": "Describe your vision. Our Nano Banana AI optimizer will enhance your prompt for the best results.",
+        "description": "Describe your vision. Our <strong>Nano Banana AI</strong> optimizer will enhance your prompt for the best results.",
         "image": {
-          "src": "/imgs/features/7.png",
+          "src": "/imgs/gallery/cinematic-1.jpg",
           "alt": "Enter Prompt"
         }
       },
@@ -275,7 +359,7 @@
         "title": "Generate & Edit",
         "description": "Get instant results from Google's cloud servers and refine them with our built-in editing tools.",
         "image": {
-          "src": "/imgs/features/8.png",
+          "src": "/imgs/gallery/product-1.jpg",
           "alt": "Generate"
         }
       }
@@ -285,16 +369,16 @@
   "features": {
     "id": "features",
     "title": "Key Features of Nano Banana Pro",
-    "description": "Everything you need to succeed with Nano Banana AI image generation.",
+    "description": "Everything you need to succeed with <strong>Nano Banana AI</strong> image generation.",
     "items": [
       {
         "title": "Native Architecture",
-        "description": "Built from the ground up for the Nano Banana architecture.",
+        "description": "Built from the ground up for the <strong>Nano Banana</strong> architecture.",
         "icon": "RiCpuLine"
       },
       {
         "title": "Google Cloud TPUs",
-        "description": "Direct pipe to Google Nano Banana TPUs for lightning fast generation.",
+        "description": "Direct pipe to <strong>Google Nano Banana</strong> TPUs for lightning fast generation.",
         "icon": "RiCloudLine"
       },
       {
@@ -319,22 +403,63 @@
       }
     ]
   },
+  "prompt_showcase": {
+    "block": "prompt-gallery",
+    "id": "prompt-showcase",
+    "title": "Popular Nano Banana Prompts",
+    "label": "Prompts",
+    "description": "Try these trending prompts used by top <strong>Nano Banana AI</strong> creators. Click to copy!",
+    "items": [
+      {
+        "title": "Photorealistic Portrait",
+        "prompt": "Ultra-realistic close-up beauty portrait of a young woman with natural skin texture. Soft diffused studio lighting, minimal makeup. Light blue eyes, straight brows, natural freckles across nose and cheeks, slightly flushed rosy cheeks. Neutral matte lips, relaxed expression, centered framing. Shallow depth of field with sharp focus on eyes and skin details. Clean white background, high-resolution editorial skincare photography style.",
+        "image": {
+          "src": "/imgs/gallery/portrait-1.jpg",
+          "alt": "Photorealistic Portrait Result"
+        },
+        "category": "Portrait"
+      },
+      {
+        "title": "Figure Transformation",
+        "prompt": "Transform the illustration into a photorealistic PVC figure. Keep the original character's design, pose, proportions, and colors exactly the same. Render realistic painted surfaces with detailed shading. Include subtle seam lines typical of manufactured figures. Apply glossy highlights on hair and clothing, matte finish on skin.",
+        "image": {
+          "src": "/imgs/gallery/product-1.jpg",
+          "alt": "Figure Transformation Result"
+        },
+        "category": "Product"
+      },
+      {
+        "title": "Four Seasons Landscape",
+        "prompt": "Ultra-realistic digital illustration: Historical Asakusa waterfront viewed across the Sumida River towards the futuristic Tokyo Skytree. Depict this scene as a seamless composition cycling through the four seasons from left to right. Left (Winter): Cold snowy landscape, snow-covered historic buildings, icy and cloudy elements. Center-left (Spring): Melting snow, fresh green buds, blooming cherry blossoms. Center-right (Summer): Lush green vegetation, bright sunlight, strong reflections on the river. Right (Autumn): Vibrant golden, orange, red foliage. No visible boundaries between seasons, smooth blending. Cinematic lighting, 8K resolution, highly detailed textures.",
+        "image": {
+          "src": "/imgs/gallery/landscape-1.jpg",
+          "alt": "Four Seasons Result"
+        },
+        "category": "Landscape"
+      }
+    ],
+    "className": "bg-muted"
+  },
   "stats": {
     "id": "stats",
     "title": "Creators Trust BananaPro",
-    "description": "Join the revolution of Nano Banana AI creators.",
+    "description": "Join the revolution of <strong>Nano Banana AI</strong> creators.",
     "items": [
       {
-        "title": "New",
-        "description": "Platform Launch"
+        "title": "1M+",
+        "description": "Active Creators"
       },
       {
-        "title": "100+",
-        "description": "Templates"
+        "title": "10M+",
+        "description": "Images Generated"
       },
       {
         "title": "24/7",
         "description": "AI Processing"
+      },
+      {
+        "title": "4K",
+        "description": "Max Resolution"
       }
     ],
     "className": "bg-muted"
@@ -342,60 +467,60 @@
   "testimonials": {
     "id": "testimonials",
     "title": "What Users Say About Nano Banana Pro",
-    "description": "Real feedback from the Nano Banana community.",
+    "description": "Real feedback from the <strong>Nano Banana</strong> community.",
     "items": [
       {
         "name": "Sarah Jenkins",
         "role": "Digital Artist",
-        "quote": "Nano Banana Pro completely changed my workflow. The character consistency is unmatched by any other AI.",
+        "quote": "<strong>Nano Banana Pro</strong> completely changed my workflow. The character consistency is unmatched by any other AI.",
         "image": {
           "src": "/imgs/avatars/1.png",
-          "alt": "Sarah Jenkins - Digital Artist"
+          "alt": "Sarah"
         }
       },
       {
         "name": "Mike Chen",
         "role": "Game Developer",
-        "quote": "I use Google Nano Banana for all my asset generation now. BananaPro makes it so easy to control the output.",
+        "quote": "I use <strong>Google Nano Banana</strong> for all my asset generation now. BananaPro makes it so easy to control the output.",
         "image": {
           "src": "/imgs/avatars/2.png",
-          "alt": "Mike Chen - Game Developer"
+          "alt": "Mike"
         }
       },
       {
         "name": "Emily Rose",
         "role": "Marketing Director",
-        "quote": "The Nano Banana AI results are production ready instantly. Highly recommend this tool for any agency.",
+        "quote": "The <strong>Nano Banana AI</strong> results are production ready instantly. Highly recommend this tool for any agency.",
         "image": {
           "src": "/imgs/avatars/3.png",
-          "alt": "Emily Rose - Marketing Director"
+          "alt": "Emily"
         }
       },
       {
         "name": "David Kim",
         "role": "Prompt Engineer",
-        "quote": "Best interface for Nano Banana I've found. The prompt tools are incredible.",
+        "quote": "Best interface for <strong>Nano Banana</strong> I've found. The prompt tools are incredible.",
         "image": {
           "src": "/imgs/avatars/4.png",
-          "alt": "David Kim - Prompt Engineer"
+          "alt": "David"
         }
       },
       {
         "name": "Lisa Wang",
         "role": "Content Creator",
-        "quote": "Nano Banana Google integration is seamless here. Fast, reliable, and high quality.",
+        "quote": "<strong>Nano Banana Google</strong> integration is seamless here. Fast, reliable, and high quality.",
         "image": {
           "src": "/imgs/avatars/5.png",
-          "alt": "Lisa Wang - Content Creator"
+          "alt": "Lisa"
         }
       },
       {
         "name": "Tom Baker",
         "role": "Indie Dev",
-        "quote": "Started using Nano Banana Pro last week and I'm blown away by the 3D control capabilities.",
+        "quote": "Started using <strong>Nano Banana Pro</strong> last week and I'm blown away by the 3D control capabilities.",
         "image": {
           "src": "/imgs/avatars/6.png",
-          "alt": "Tom Baker - Indie Developer"
+          "alt": "Tom"
         }
       }
     ]
@@ -403,28 +528,28 @@
   "faq": {
     "id": "faq",
     "title": "Frequently Asked Questions About Nano Banana",
-    "description": "Learn more about Nano Banana AI and our platform.",
+    "description": "Learn more about <strong>Nano Banana AI</strong> and our platform.",
     "tip": "Can't find what you're looking for? Contact our <a href='mailto:support@bananapro.dev' class='text-primary font-medium hover:underline'>support@bananapro.dev</a>",
     "items": [
       {
         "question": "What is Nano Banana AI?",
-        "answer": "Nano Banana AI is the community name for the latest generation of advanced image models, specifically referring to Google Nano Banana (Gemini) technology known for superior reasoning and consistency."
+        "answer": "<strong>Nano Banana AI</strong> is the community name for the latest generation of advanced image models, specifically referring to <strong>Google Nano Banana</strong> (Gemini) technology known for superior reasoning and consistency."
       },
       {
         "question": "Is BananaPro free to use?",
-        "answer": "We offer a free tier that lets you explore Nano Banana capabilities. For heavy usage and advanced features, we have affordable subscription plans."
+        "answer": "We offer a free tier that lets you explore <strong>Nano Banana</strong> capabilities. For heavy usage and advanced features, we have affordable subscription plans."
       },
       {
         "question": "How does Nano Banana differ from Midjourney?",
-        "answer": "Nano Banana excels at prompt adherence and specific editing tasks like keeping a character's face the same across different poses, which is a key advantage of Google Nano Banana models."
+        "answer": "<strong>Nano Banana</strong> excels at prompt adherence and specific editing tasks like keeping a character's face the same across different poses, which is a key advantage of <strong>Google Nano Banana</strong> models."
       },
       {
         "question": "Can I use generated images commercially?",
-        "answer": "Yes! All images generated via BananaPro come with full commercial rights, so you can use your Nano Banana AI art for any project."
+        "answer": "Yes! All images generated via BananaPro come with full commercial rights, so you can use your <strong>Nano Banana AI</strong> art for any project."
       },
       {
         "question": "Do you use official Google Nano Banana models?",
-        "answer": "Yes, our platform is built on top of the authentic Google Nano Banana API to ensure you get the highest quality results possible."
+        "answer": "Yes, our platform is built on top of the authentic <strong>Google Nano Banana</strong> API to ensure you get the highest quality results possible."
       },
       {
         "question": "Is it compatible with other tools?",
@@ -435,7 +560,7 @@
   "cta": {
     "id": "cta",
     "title": "Start Creating with BananaPro Today",
-    "description": "Join thousands of users mastering Nano Banana AI image generation.",
+    "description": "Join thousands of users mastering <strong>Nano Banana AI</strong> image generation.",
     "buttons": [
       {
         "title": "Get Started Now",
@@ -456,7 +581,7 @@
   "subscribe": {
     "id": "subscribe",
     "title": "Subscribe for Updates",
-    "description": "Get the latest Nano Banana tips, tricks, and AI model news.",
+    "description": "Get the latest <strong>Nano Banana</strong> tips, tricks, and AI model news.",
     "submit": {
       "input": {
         "placeholder": "Enter your email"
@@ -472,10 +597,10 @@
     "id": "footer",
     "brand": {
       "title": "BananaPro",
-      "description": "BananaPro is the leading platform for Nano Banana AI image generation. We empower creators with the best Google AI tools.",
+      "description": "BananaPro is the leading platform for <strong>Nano Banana AI</strong> image generation. We empower creators with the best Google AI tools.",
       "logo": {
         "src": "/logo-banana.svg",
-        "alt": "BananaPro Logo",
+        "alt": "BananaPro",
         "width": 1024,
         "height": 1024
       },
@@ -543,24 +668,6 @@
     "social": {
       "items": [
         {
-          "title": "X",
-          "icon": "RiTwitterXFill",
-          "url": "https://x.com/bananapro",
-          "target": "_blank"
-        },
-        {
-          "title": "Github",
-          "icon": "Github",
-          "url": "https://github.com/bananapro",
-          "target": "_blank"
-        },
-        {
-          "title": "Discord",
-          "icon": "RiDiscordFill",
-          "url": "https://discord.gg/bananapro",
-          "target": "_blank"
-        },
-        {
           "title": "Email",
           "icon": "Mail",
           "url": "mailto:support@bananapro.dev",
@@ -580,6 +687,8 @@
         }
       ]
     },
+    "copyright": "© 2025 BananaPro. All rights reserved.",
+    "show_built_with": false,
     "show_theme": true,
     "show_locale": true
   }

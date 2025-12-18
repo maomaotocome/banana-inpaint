@@ -1,146 +1,183 @@
 {
   "metadata": {
-    "title": "案例展示",
-    "description": "用 ShipAny 打造的精彩项目"
+    "title": "Nano Banana AI 画廊",
+    "description": "探索使用 Nano Banana Pro 创作的精彩 AI 生成图片"
   },
   "showcases": {
     "id": "showcases",
     "groups": [
       {
         "name": "all",
-        "title": "所有项目"
+        "title": "全部"
       },
       {
-        "name": "ai-chatbot",
-        "title": "AI 聊天机器人"
+        "name": "portrait",
+        "title": "人像"
       },
       {
-        "name": "ai-image",
-        "title": "AI 图片"
+        "name": "landscape",
+        "title": "风景"
       },
       {
-        "name": "ai-video",
-        "title": "AI 视频"
+        "name": "product",
+        "title": "产品"
       },
       {
-        "name": "ai-audio",
-        "title": "AI 音频"
+        "name": "art",
+        "title": "数字艺术"
       },
       {
-        "name": "ai-music",
-        "title": "AI 音乐"
-      },
-      {
-        "name": "ai-coding",
-        "title": "AI 编程"
-      },
-      {
-        "name": "other",
-        "title": "其他"
+        "name": "comparison",
+        "title": "前后对比"
       }
     ],
-    "sr_only_title": "案例展示",
-    "title": "用 ShipAny 构建的 AI SaaS 创业项目",
-    "description": "简单、快速、高效。",
+    "sr_only_title": "作品展示",
+    "title": "Nano Banana AI 画廊",
+    "description": "探索我们社区使用 Nano Banana Pro 创作的精彩 AI 生成图片。悬停查看提示词！",
     "items": [
       {
-        "title": "ThinkAny",
-        "description": "AI 搜索引擎",
-        "url": "https://thinkany.ai",
-        "target": "_blank",
+        "title": "逼真美容人像",
+        "description": "具有自然皮肤纹理和柔和工作室照明的超现实近距离特写",
+        "url": "/nanobanana-ai-image-generator",
+        "target": "_self",
         "image": {
-          "src": "/imgs/cases/7.png",
-          "alt": "案例展示"
+          "src": "/imgs/gallery/portrait-1.jpg",
+          "alt": "逼真人像 - Nano Banana AI"
         },
-        "group": "ai-chatbot"
+        "group": "portrait",
+        "prompt": "具有自然皮肤纹理的年轻女性超现实近距离美容肖像。柔和的漫射工作室照明，极简妆容。浅蓝色眼睛，直眉，鼻子和脸颊上自然的雀斑，略带红晕的脸颊。自然哑光唇，放松的表情，居中构图。浅景深，眼睛和皮肤细节清晰对焦。干净的白色背景，高分辨率护肤摄影风格。"
       },
       {
-        "title": "HeyBeauty",
-        "description": "AI 虚拟试妆",
-        "url": "https://heybeauty.ai",
-        "target": "_blank",
+        "title": "戏剧性黑白人像",
+        "description": "具有精细皱纹细节和戏剧性侧光的老年男子肖像",
+        "url": "/nanobanana-ai-image-generator",
+        "target": "_self",
         "image": {
-          "src": "/imgs/cases/5.png",
-          "alt": "案例展示"
+          "src": "/imgs/gallery/portrait-2.jpg",
+          "alt": "戏剧性人像 - Nano Banana Pro"
         },
-        "group": "ai-image"
+        "group": "portrait",
+        "prompt": "老年男子的戏剧性黑白人像。强烈的侧光创造深邃的阴影。超细节皱纹和皮肤纹理。锐利的眼神和眼神光。高对比度，艺术摄影风格。面部特征清晰对焦。深色背景，工作室照明设置。"
       },
       {
-        "title": "AI Wallpaper",
-        "description": "AI 壁纸生成器",
-        "url": "https://aiwallpaper.shop",
-        "target": "_blank",
+        "title": "四季东京",
+        "description": "在一个令人惊叹的场景中从冬到秋四季的无缝融合",
+        "url": "/nanobanana-ai-image-generator",
+        "target": "_self",
         "image": {
-          "src": "/imgs/cases/1.png",
-          "alt": "案例展示"
+          "src": "/imgs/gallery/landscape-1.jpg",
+          "alt": "四季风景 - Nano Banana AI"
         },
-        "group": "ai-image"
+        "group": "landscape",
+        "prompt": "超现实数字插画：从隅田川眺望未来主义东京天空树的历史浅草水岸。将此场景描绘为从左到右循环穿越四季的无缝构图。左侧（冬季）：寒冷的雪景，积雪覆盖的历史建筑，冰冷多云的元素。中左（春季）：融雪，新绿嫩芽，盛开的樱花。中右（夏季）：茂密的绿色植被，明亮的阳光，河面强烈的反射。右侧（秋季）：充满活力的金色、橙色、红色树叶。季节之间没有可见边界，平滑过渡。电影级光照，8K 分辨率，高度细腻的纹理。"
       },
       {
-        "title": "AI Cover",
-        "description": "AI 封面生成器",
-        "url": "https://aicover.design",
-        "target": "_blank",
+        "title": "电影多角度场景",
+        "description": "多个角度具有一致色彩和氛围光照的电影场景",
+        "url": "/nanobanana-ai-image-generator",
+        "target": "_self",
         "image": {
-          "src": "/imgs/cases/2.png",
-          "alt": "案例展示"
+          "src": "/imgs/gallery/cinematic-1.jpg",
+          "alt": "电影场景 - Nano Banana AI"
         },
-        "group": "ai-image"
+        "group": "art",
+        "prompt": "电影多角度场景生成。同一角色从多个摄像机角度以网格布局显示。具有暖色调的一致色彩分级。专业电影照明设置。大气雾和体积光。电影海报品质，35mm 胶片颗粒。所有角度保持一致的服装和角色设计。"
       },
       {
-        "title": "GPTs Works",
-        "description": "GPTs 导航",
-        "url": "https://gpts.works",
-        "target": "_blank",
+        "title": "专业手办产品",
+        "description": "具有专业布局的可收藏手办产品展示",
+        "url": "/nanobanana-ai-image-generator",
+        "target": "_self",
         "image": {
-          "src": "/imgs/cases/3.png",
-          "alt": "案例展示"
+          "src": "/imgs/gallery/product-1.jpg",
+          "alt": "产品展示 - Nano Banana AI"
         },
-        "group": "other"
+        "group": "product",
+        "prompt": "将插画转换为逼真的 PVC 手办。保持原始角色的设计、姿势、比例和颜色完全相同。渲染具有详细阴影的逼真涂装表面。包含制造手办典型的微妙接缝线。头发和衣服应用光泽高光，皮肤应用哑光质感。产品摄影照明，干净的白色背景，展示手办细节的多个角度。"
       },
       {
-        "title": "Melodisco",
-        "description": "AI 音乐播放器",
-        "url": "https://melodis.co",
-        "target": "_blank",
+        "title": "设计工作流程可视化",
+        "description": "从草图到 AI 生成的最终产品 - 完整设计流程",
+        "url": "/nanobanana-ai-image-generator",
+        "target": "_self",
         "image": {
-          "src": "/imgs/cases/4.png",
-          "alt": "案例展示"
+          "src": "/imgs/gallery/design-1.jpg",
+          "alt": "设计工作流程 - Nano Banana AI"
         },
-        "group": "ai-music"
+        "group": "product",
+        "prompt": "多视图家具设计流程。展示从初始铅笔草图到详细线稿再到完全渲染的 3D 可视化的过程。现代极简沙发设计。包括正视图、侧视图、俯视图和透视图。白色背景上的干净展示。室内设计作品集风格。柔和的阴影和环境遮挡。"
       },
       {
-        "title": "Pagen",
-        "description": "AI 落地页生成器",
-        "url": "https://pagen.so",
-        "target": "_blank",
+        "title": "人像真实感 - 之前",
+        "description": "原始 Nano Banana 生成显示基础质量水平",
+        "url": "/nanobanana-ai-image-generator",
+        "target": "_self",
         "image": {
-          "src": "/imgs/cases/6.png",
-          "alt": "案例展示"
+          "src": "/imgs/comparison/portrait-before.jpg",
+          "alt": "之前 - Nano Banana"
         },
-        "group": "ai-coding"
+        "group": "comparison",
+        "prompt": "年轻女性肖像，自然光照，柔焦，标准 AI 生成质量。"
       },
       {
-        "title": "SoraFM",
-        "description": "AI 视频生成器",
-        "url": "https://sorafm.trys.ai",
-        "target": "_blank",
+        "title": "人像真实感 - 之后 Pro",
+        "description": "增强的 Nano Banana Pro 具有逼真的皮肤纹理和头发细节",
+        "url": "/nanobanana-ai-image-generator",
+        "target": "_self",
         "image": {
-          "src": "/imgs/cases/8.png",
-          "alt": "案例展示"
+          "src": "/imgs/comparison/portrait-after.jpg",
+          "alt": "之后 - Nano Banana Pro"
         },
-        "group": "ai-video"
+        "group": "comparison",
+        "prompt": "具有增强皮肤纹理的超现实人像，可见单独的头发丝，微妙的次表面散射，专业修图质量，8K 分辨率，Nano Banana Pro 增强。"
       },
       {
-        "title": "PodLM",
-        "description": "AI 播客生成器",
-        "url": "https://podlm.ai",
-        "target": "_blank",
+        "title": "艺术风格 - 之前",
+        "description": "原始艺术风格生成显示透视处理",
+        "url": "/nanobanana-ai-image-generator",
+        "target": "_self",
         "image": {
-          "src": "/imgs/cases/9.png",
-          "alt": "案例展示"
+          "src": "/imgs/comparison/art-before.jpg",
+          "alt": "之前 - 艺术风格"
         },
-        "group": "ai-audio"
+        "group": "comparison",
+        "prompt": "数字艺术插画，动漫风格角色，动态姿势，标准透视渲染。"
+      },
+      {
+        "title": "艺术风格 - 之后 Pro",
+        "description": "Pro 版本改进了透视缩短和风格一致性",
+        "url": "/nanobanana-ai-image-generator",
+        "target": "_self",
+        "image": {
+          "src": "/imgs/comparison/art-after.jpg",
+          "alt": "之后 - 艺术风格 Pro"
+        },
+        "group": "comparison",
+        "prompt": "具有完美透视缩短的数字艺术插画，解剖学正确的比例，全程一致的艺术风格，专业概念艺术品质，由 Nano Banana Pro 增强。"
+      },
+      {
+        "title": "文字渲染 - 之前",
+        "description": "标准文字渲染显示典型的 AI 文字挑战",
+        "url": "/nanobanana-ai-image-generator",
+        "target": "_self",
+        "image": {
+          "src": "/imgs/comparison/text-before.jpg",
+          "alt": "之前 - 文字模糊"
+        },
+        "group": "comparison",
+        "prompt": "带有文字标签的信息图设计，标准 AI 文字渲染质量。"
+      },
+      {
+        "title": "文字渲染 - 之后 Pro",
+        "description": "Nano Banana Pro 实现近乎完美的 4K 文字渲染",
+        "url": "/nanobanana-ai-image-generator",
+        "target": "_self",
+        "image": {
+          "src": "/imgs/comparison/text-after.jpg",
+          "alt": "之后 - 文字清晰"
+        },
+        "group": "comparison",
+        "prompt": "具有水晶般清晰文字渲染的专业信息图，完美的排版，所有尺寸字体清晰可读，4K 分辨率，Nano Banana Pro 文字增强。"
       }
     ]
   }

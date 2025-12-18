@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "title": "Showcases",
-    "description": "Awesome projects built with ShipAny"
+    "title": "Nano Banana AI Gallery",
+    "description": "Explore stunning AI-generated images created with Nano Banana Pro"
   },
   "showcases": {
     "id": "showcases",
@@ -11,136 +11,173 @@
         "title": "All"
       },
       {
-        "name": "ai-chatbot",
-        "title": "AI Chatbot"
+        "name": "portrait",
+        "title": "Portrait"
       },
       {
-        "name": "ai-image",
-        "title": "AI Image"
+        "name": "landscape",
+        "title": "Landscape"
       },
       {
-        "name": "ai-video",
-        "title": "AI Video"
+        "name": "product",
+        "title": "Product"
       },
       {
-        "name": "ai-audio",
-        "title": "AI Audio"
+        "name": "art",
+        "title": "Digital Art"
       },
       {
-        "name": "ai-music",
-        "title": "AI Music"
-      },
-      {
-        "name": "ai-coding",
-        "title": "AI Coding"
-      },
-      {
-        "name": "other",
-        "title": "Other"
+        "name": "comparison",
+        "title": "Before/After"
       }
     ],
     "sr_only_title": "Showcases",
-    "title": "AI SaaS Startups built with ShipAny",
-    "description": "Easy to use and fast to ship.",
+    "title": "Nano Banana AI Gallery",
+    "description": "Discover amazing AI-generated images created by our community. Hover over any image to see the prompt used!",
     "items": [
       {
-        "title": "ThinkAny",
-        "description": "AI Search Engine",
-        "url": "https://thinkany.ai",
-        "target": "_blank",
+        "title": "Photorealistic Beauty Portrait",
+        "description": "Ultra-realistic close-up with natural skin texture and soft studio lighting",
+        "url": "/nanobanana-ai-image-generator",
+        "target": "_self",
         "image": {
-          "src": "/imgs/cases/7.png",
-          "alt": "showcases"
+          "src": "/imgs/gallery/portrait-1.jpg",
+          "alt": "Photorealistic Portrait - Nano Banana AI"
         },
-        "group": "ai-chatbot"
+        "group": "portrait",
+        "prompt": "Ultra-realistic close-up beauty portrait of a young woman with natural skin texture. Soft diffused studio lighting, minimal makeup. Light blue eyes, straight brows, natural freckles across nose and cheeks, slightly flushed rosy cheeks. Neutral matte lips, relaxed expression, centered framing. Shallow depth of field with sharp focus on eyes and skin details. Clean white background, high-resolution editorial skincare photography style."
       },
       {
-        "title": "HeyBeauty",
-        "description": "AI Virtual Try On",
-        "url": "https://heybeauty.ai",
-        "target": "_blank",
+        "title": "Dramatic Black & White Portrait",
+        "description": "Elderly man portrait with fine wrinkle details and dramatic side lighting",
+        "url": "/nanobanana-ai-image-generator",
+        "target": "_self",
         "image": {
-          "src": "/imgs/cases/5.png",
-          "alt": "showcases"
+          "src": "/imgs/gallery/portrait-2.jpg",
+          "alt": "Dramatic Portrait - Nano Banana Pro"
         },
-        "group": "ai-image"
+        "group": "portrait",
+        "prompt": "Dramatic black and white portrait of an elderly man. Strong side lighting creating deep shadows. Ultra-detailed wrinkles and skin texture. Piercing eyes with catchlights. High contrast, fine art photography style. Sharp focus on facial features. Dark background, studio lighting setup."
       },
       {
-        "title": "AI Wallpaper",
-        "description": "AI Wallpaper Generator",
-        "url": "https://aiwallpaper.shop",
-        "target": "_blank",
+        "title": "Four Seasons Tokyo",
+        "description": "Seamless blend of all four seasons from winter to autumn in one stunning scene",
+        "url": "/nanobanana-ai-image-generator",
+        "target": "_self",
         "image": {
-          "src": "/imgs/cases/1.png",
-          "alt": "showcases"
+          "src": "/imgs/gallery/landscape-1.jpg",
+          "alt": "Four Seasons Landscape - Nano Banana AI"
         },
-        "group": "ai-image"
+        "group": "landscape",
+        "prompt": "Ultra-realistic digital illustration: Historical Asakusa waterfront viewed across the Sumida River towards the futuristic Tokyo Skytree. Depict this scene as a seamless composition cycling through the four seasons from left to right. Left (Winter): Cold snowy landscape, snow-covered historic buildings, icy and cloudy elements. Center-left (Spring): Melting snow, fresh green buds, blooming cherry blossoms. Center-right (Summer): Lush green vegetation, bright sunlight, strong reflections on the river. Right (Autumn): Vibrant golden, orange, red foliage. No visible boundaries between seasons, smooth blending. Cinematic lighting, 8K resolution, highly detailed textures."
       },
       {
-        "title": "AI Cover",
-        "description": "AI Cover Generator",
-        "url": "https://aicover.design",
-        "target": "_blank",
+        "title": "Cinematic Multi-Angle Scene",
+        "description": "Movie scene with consistent colors and atmospheric lighting across multiple angles",
+        "url": "/nanobanana-ai-image-generator",
+        "target": "_self",
         "image": {
-          "src": "/imgs/cases/2.png",
-          "alt": "showcases"
+          "src": "/imgs/gallery/cinematic-1.jpg",
+          "alt": "Cinematic Scene - Nano Banana AI"
         },
-        "group": "ai-image"
+        "group": "art",
+        "prompt": "Cinematic multi-angle scene generation. Same character shown from multiple camera angles in a grid layout. Consistent color grading with warm tones. Professional film lighting setup. Atmospheric fog and volumetric lighting. Movie poster quality, 35mm film grain. Consistent costume and character design across all angles."
       },
       {
-        "title": "GPTs Works",
-        "description": "GPTs Directory",
-        "url": "https://gpts.works",
-        "target": "_blank",
+        "title": "Professional Figure Product",
+        "description": "Collectible figure product showcase with professional layout",
+        "url": "/nanobanana-ai-image-generator",
+        "target": "_self",
         "image": {
-          "src": "/imgs/cases/3.png",
-          "alt": "showcases"
+          "src": "/imgs/gallery/product-1.jpg",
+          "alt": "Product Showcase - Nano Banana AI"
         },
-        "group": "other"
+        "group": "product",
+        "prompt": "Transform the illustration into a photorealistic PVC figure. Keep the original character's design, pose, proportions, and colors exactly the same. Render realistic painted surfaces with detailed shading. Include subtle seam lines typical of manufactured figures. Apply glossy highlights on hair and clothing, matte finish on skin. Product photography lighting, clean white background, multiple angles showing figure details."
       },
       {
-        "title": "Melodisco",
-        "description": "AI Music Player",
-        "url": "https://melodis.co",
-        "target": "_blank",
+        "title": "Design Workflow Visualization",
+        "description": "From sketch to AI-generated final product - complete design process",
+        "url": "/nanobanana-ai-image-generator",
+        "target": "_self",
         "image": {
-          "src": "/imgs/cases/4.png",
-          "alt": "showcases"
+          "src": "/imgs/gallery/design-1.jpg",
+          "alt": "Design Workflow - Nano Banana AI"
         },
-        "group": "ai-music"
+        "group": "product",
+        "prompt": "Multi-view furniture design process. Show progression from initial pencil sketch to detailed line drawing to fully rendered 3D visualization. Modern minimalist sofa design. Include orthographic views: front, side, top, and perspective. Clean presentation on white background. Interior design portfolio style. Soft shadows and ambient occlusion."
       },
       {
-        "title": "Pagen",
-        "description": "AI Landing Page Generator",
-        "url": "https://pagen.so",
-        "target": "_blank",
+        "title": "Portrait Realism - Before",
+        "description": "Original Nano Banana generation showing base quality level",
+        "url": "/nanobanana-ai-image-generator",
+        "target": "_self",
         "image": {
-          "src": "/imgs/cases/6.png",
-          "alt": "showcases"
+          "src": "/imgs/comparison/portrait-before.jpg",
+          "alt": "Before - Nano Banana"
         },
-        "group": "ai-coding"
+        "group": "comparison",
+        "prompt": "Portrait of a young woman, natural lighting, soft focus, standard AI generation quality."
       },
       {
-        "title": "SoraFM",
-        "description": "AI Video Generator",
-        "url": "https://sorafm.trys.ai",
-        "target": "_blank",
+        "title": "Portrait Realism - After Pro",
+        "description": "Enhanced Nano Banana Pro with realistic skin textures and hair details",
+        "url": "/nanobanana-ai-image-generator",
+        "target": "_self",
         "image": {
-          "src": "/imgs/cases/8.png",
-          "alt": "showcases"
+          "src": "/imgs/comparison/portrait-after.jpg",
+          "alt": "After - Nano Banana Pro"
         },
-        "group": "ai-video"
+        "group": "comparison",
+        "prompt": "Ultra-realistic portrait with enhanced skin texture, individual hair strands visible, subtle subsurface scattering, professional retouching quality, 8K resolution, Nano Banana Pro enhanced."
       },
       {
-        "title": "PodLM",
-        "description": "AI Podcast Generator",
-        "url": "https://podlm.ai",
-        "target": "_blank",
+        "title": "Art Style - Before",
+        "description": "Original art style generation showing perspective handling",
+        "url": "/nanobanana-ai-image-generator",
+        "target": "_self",
         "image": {
-          "src": "/imgs/cases/9.png",
-          "alt": "showcases"
+          "src": "/imgs/comparison/art-before.jpg",
+          "alt": "Before - Art Style"
         },
-        "group": "ai-audio"
+        "group": "comparison",
+        "prompt": "Digital art illustration, anime style character, dynamic pose, standard perspective rendering."
+      },
+      {
+        "title": "Art Style - After Pro",
+        "description": "Improved foreshortening and style consistency with Pro version",
+        "url": "/nanobanana-ai-image-generator",
+        "target": "_self",
+        "image": {
+          "src": "/imgs/comparison/art-after.jpg",
+          "alt": "After - Art Style Pro"
+        },
+        "group": "comparison",
+        "prompt": "Digital art illustration with perfect foreshortening, anatomically correct proportions, consistent art style throughout, professional concept art quality, enhanced by Nano Banana Pro."
+      },
+      {
+        "title": "Text Rendering - Before",
+        "description": "Standard text rendering showing typical AI text challenges",
+        "url": "/nanobanana-ai-image-generator",
+        "target": "_self",
+        "image": {
+          "src": "/imgs/comparison/text-before.jpg",
+          "alt": "Before - Text Blurry"
+        },
+        "group": "comparison",
+        "prompt": "Infographic design with text labels, standard AI text rendering quality."
+      },
+      {
+        "title": "Text Rendering - After Pro",
+        "description": "Near-perfect 4K text rendering with Nano Banana Pro",
+        "url": "/nanobanana-ai-image-generator",
+        "target": "_self",
+        "image": {
+          "src": "/imgs/comparison/text-after.jpg",
+          "alt": "After - Text Clear"
+        },
+        "group": "comparison",
+        "prompt": "Professional infographic with crystal clear text rendering, perfect typography, legible fonts at all sizes, 4K resolution, Nano Banana Pro text enhancement."
       }
     ]
   }

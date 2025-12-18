@@ -1,6 +1,6 @@
 'use client';
 
-import { useCallback, useEffect, useMemo, useState } from 'react';
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import {
   CreditCard,
   Download,
@@ -10,6 +10,7 @@ import {
   User,
 } from 'lucide-react';
 import { useTranslations } from 'next-intl';
+import { useSearchParams } from 'next/navigation';
 import { toast } from 'sonner';
 
 import { Link } from '@/core/i18n/navigation';
@@ -71,6 +72,7 @@ type ImageGeneratorTab = 'text-to-image' | 'image-to-image';
 const POLL_INTERVAL = 5000;
 const GENERATION_TIMEOUT = 180000;
 const MAX_PROMPT_LENGTH = 2000;
+const PROMPT_STORAGE_KEY = 'nanobanana:prefill-prompt';
 
 const MODEL_OPTIONS = [
   {
@@ -210,6 +212,9 @@ export function ImageGenerator({
   className,
 }: ImageGeneratorProps) {
   const t = useTranslations('ai.image.generator');
+  const searchParams = useSearchParams();
+  const promptTextareaRef = useRef<HTMLTextAreaElement>(null);
+  const didInitPromptRef = useRef(false);
 
   const [activeTab, setActiveTab] =
     useState<ImageGeneratorTab>('text-to-image');
@@ -241,6 +246,43 @@ export function ImageGenerator({
   useEffect(() => {
     setIsMounted(true);
   }, []);
+
+  useEffect(() => {
+    if (didInitPromptRef.current) {
+      return;
+    }
+
+    const promptFromUrl = searchParams.get('prompt')?.trim();
+    const promptFromStorage =
+      typeof window !== 'undefined'
+        ? window.sessionStorage.getItem(PROMPT_STORAGE_KEY)?.trim()
+        : null;
+
+    const initialPrompt = promptFromUrl || promptFromStorage;
+    if (!initialPrompt) {
+      didInitPromptRef.current = true;
+      return;
+    }
+
+    setPrompt((currentPrompt) =>
+      currentPrompt.trim() ? currentPrompt : initialPrompt
+    );
+
+    if (typeof window !== 'undefined') {
+      window.sessionStorage.removeItem(PROMPT_STORAGE_KEY);
+    }
+
+    didInitPromptRef.current = true;
+
+    // Focus prompt field for faster workflow (landing -> generator).
+    requestAnimationFrame(() => {
+      const el = promptTextareaRef.current;
+      if (!el) return;
+      el.focus();
+      const valueLength = el.value.length;
+      el.setSelectionRange(valueLength, valueLength);
+    });
+  }, [searchParams]);
 
   const promptLength = prompt.trim().length;
   const remainingCredits = user?.credits?.remainingCredits ?? 0;
@@ -699,6 +741,7 @@ export function ImageGenerator({
                     onChange={(e) => setPrompt(e.target.value)}
                     placeholder={t('form.prompt_placeholder')}
                     className="min-h-32"
+                    ref={promptTextareaRef}
                   />
                   <div className="text-muted-foreground flex items-center justify-between text-xs">
                     <span>

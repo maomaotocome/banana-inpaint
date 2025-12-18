@@ -1,0 +1,186 @@
+{
+  "metadata": {
+    "title": "About Us - BananaPro | The Story Behind Nano Banana AI",
+    "description": "Learn about BananaPro, the premier platform for Nano Banana AI image generation. Discover our mission to democratize AI creativity with Google's advanced Gemini models."
+  },
+  "page": {
+    "title": "About BananaPro",
+    "sections": {
+      "hero": {
+        "id": "about-hero",
+        "block": "hero",
+        "title": "Empowering Creativity with Nano Banana AI",
+        "highlight_text": "Nano Banana AI",
+        "description": "We're building the bridge between Google's revolutionary <strong>Nano Banana</strong> technology and creators worldwide. Our mission is to make AI image generation accessible, intuitive, and powerful for everyone.",
+        "buttons": [
+          {
+            "title": "Start Creating",
+            "url": "/nanobanana-ai-image-generator",
+            "icon": "Sparkles"
+          },
+          {
+            "title": "View Gallery",
+            "url": "/showcases",
+            "variant": "outline",
+            "icon": "Images"
+          }
+        ],
+        "show_avatars": false,
+        "show_award": false
+      },
+      "story": {
+        "id": "our-story",
+        "block": "features-list",
+        "title": "Our Story",
+        "label": "Who We Are",
+        "description": "BananaPro was born from a simple observation: while <strong>Google Nano Banana</strong> (Gemini) represents a quantum leap in AI image generation, accessing its full potential remained challenging for most creators.",
+        "image": {
+          "src": "/imgs/gallery/design-1.jpg",
+          "alt": "BananaPro Team Vision"
+        },
+        "items": [
+          {
+            "title": "The Beginning",
+            "description": "When <strong>Nano Banana AI</strong> emerged as the community name for Google's Gemini image models, we saw an opportunity to create tools that unlock its true capabilities.",
+            "icon": "RiSeedlingLine"
+          },
+          {
+            "title": "Our Mission",
+            "description": "To democratize access to the world's most advanced AI image technology. Every creator deserves professional-grade <strong>Nano Banana</strong> tools.",
+            "icon": "RiTargetLine"
+          },
+          {
+            "title": "The Team",
+            "description": "We're AI enthusiasts, designers, and developers united by our passion for pushing the boundaries of creative AI technology.",
+            "icon": "RiTeamLine"
+          },
+          {
+            "title": "Looking Forward",
+            "description": "As <strong>Nano Banana Pro</strong> evolves with Google's latest models, so do we. Continuous innovation is at our core.",
+            "icon": "RiRocketLine"
+          }
+        ],
+        "className": "bg-muted"
+      },
+      "what_is_nano_banana": {
+        "id": "what-is-nano-banana",
+        "block": "features-accordion",
+        "title": "What is Nano Banana AI?",
+        "label": "The Technology",
+        "description": "<strong>Nano Banana</strong> is the community-coined name for Google's cutting-edge Gemini image generation models. Here's what makes it revolutionary:",
+        "items": [
+          {
+            "title": "Google Gemini Foundation",
+            "description": "<strong>Nano Banana AI</strong> is built on Google's multimodal Gemini architecture. This means it understands context, generates photorealistic images, and can perform sophisticated edits that were previously impossible.",
+            "icon": "RiGoogleLine",
+            "image": {
+              "src": "/imgs/gallery/portrait-1.jpg",
+              "alt": "Gemini AI Technology"
+            }
+          },
+          {
+            "title": "Superior Prompt Adherence",
+            "description": "Unlike other AI tools, <strong>Nano Banana</strong> excels at following complex prompts precisely. It renders accurate text, maintains character consistency, and respects every detail of your creative vision.",
+            "icon": "RiCheckDoubleLine",
+            "image": {
+              "src": "/imgs/gallery/cinematic-1.jpg",
+              "alt": "Prompt Accuracy"
+            }
+          },
+          {
+            "title": "Professional Quality Output",
+            "description": "From photorealistic portraits to detailed product renders, <strong>Nano Banana Pro</strong> delivers studio-quality results at up to 4K resolution, ready for commercial use.",
+            "icon": "RiImageLine",
+            "image": {
+              "src": "/imgs/gallery/product-1.jpg",
+              "alt": "Professional Output"
+            }
+          }
+        ]
+      },
+      "values": {
+        "id": "our-values",
+        "block": "features",
+        "title": "Our Core Values",
+        "description": "The principles that guide everything we build at BananaPro.",
+        "items": [
+          {
+            "title": "Accessibility",
+            "description": "AI creativity shouldn't require a PhD. We make <strong>Nano Banana</strong> intuitive for everyone.",
+            "icon": "RiUserHeartLine"
+          },
+          {
+            "title": "Quality",
+            "description": "We connect you directly to Google's <strong>Nano Banana</strong> infrastructure for the best possible results.",
+            "icon": "RiShieldStarLine"
+          },
+          {
+            "title": "Innovation",
+            "description": "We're constantly developing new features to help you get more from <strong>Nano Banana AI</strong>.",
+            "icon": "RiLightbulbLine"
+          },
+          {
+            "title": "Community",
+            "description": "We're building more than a tool—we're creating a home for <strong>Nano Banana</strong> creators worldwide.",
+            "icon": "RiGroupLine"
+          },
+          {
+            "title": "Transparency",
+            "description": "No hidden fees, no surprises. We believe in honest, clear communication with our users.",
+            "icon": "RiEyeLine"
+          },
+          {
+            "title": "Support",
+            "description": "Real humans ready to help you succeed with <strong>Nano Banana Pro</strong> around the clock.",
+            "icon": "RiCustomerService2Line"
+          }
+        ],
+        "className": "bg-muted"
+      },
+      "stats": {
+        "id": "about-stats",
+        "block": "stats",
+        "title": "BananaPro by the Numbers",
+        "description": "Growing every day with the <strong>Nano Banana</strong> community.",
+        "items": [
+          {
+            "title": "1M+",
+            "description": "Active Creators"
+          },
+          {
+            "title": "10M+",
+            "description": "Images Generated"
+          },
+          {
+            "title": "150+",
+            "description": "Countries Served"
+          },
+          {
+            "title": "99.9%",
+            "description": "Uptime"
+          }
+        ]
+      },
+      "cta": {
+        "id": "about-cta",
+        "block": "cta",
+        "title": "Ready to Join the Nano Banana Revolution?",
+        "description": "Start creating stunning AI images with <strong>BananaPro</strong> today. No experience required.",
+        "buttons": [
+          {
+            "title": "Get Started Free",
+            "url": "/pricing",
+            "icon": "Zap"
+          },
+          {
+            "title": "Contact Us",
+            "url": "mailto:support@bananapro.dev",
+            "variant": "outline",
+            "icon": "Mail"
+          }
+        ],
+        "className": "bg-muted"
+      }
+    }
+  }
+}

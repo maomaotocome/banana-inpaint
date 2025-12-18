@@ -1,7 +1,9 @@
 'use client';
 
+import Image from 'next/image';
+
 import { Link } from '@/core/i18n/navigation';
-import { LazyImage, SmartIcon } from '@/shared/blocks/common';
+import { SmartIcon } from '@/shared/blocks/common';
 import { Button } from '@/shared/components/ui/button';
 import { ScrollAnimation } from '@/shared/components/ui/scroll-animation';
 import { cn } from '@/shared/lib/utils';
@@ -15,7 +17,6 @@ export function FeaturesList({
   className?: string;
 }) {
   return (
-    // Prevent horizontal scrolling
     <section
       className={cn(
         'overflow-x-hidden py-16 md:py-24',
@@ -24,50 +25,97 @@ export function FeaturesList({
       )}
     >
       <div className="container overflow-x-hidden">
-        <div className="flex flex-wrap items-center gap-8 pb-12 md:gap-24">
-          <ScrollAnimation direction="left">
-            <div className="mx-auto w-full max-w-[500px] flex-shrink-0 md:mx-0">
-              <LazyImage
+        {/* Modern bento-style layout */}
+        <div className="grid grid-cols-1 gap-8 lg:grid-cols-12 lg:gap-10">
+          {/* Left: Image - takes 5 columns on large screens */}
+          <ScrollAnimation
+            direction="left"
+            className="lg:col-span-5"
+          >
+            <div className="relative mx-auto aspect-[3/4] w-full max-w-md overflow-hidden rounded-3xl border border-border/50 shadow-2xl lg:mx-0 lg:max-w-none">
+              <Image
                 src={section.image?.src ?? ''}
                 alt={section.image?.alt ?? ''}
-                className="h-auto w-full rounded-lg object-cover"
+                fill
+                sizes="(max-width: 1024px) 100vw, 40vw"
+                className="object-cover"
               />
+              {/* Subtle gradient overlay for depth */}
+              <div className="absolute inset-0 bg-gradient-to-t from-black/10 via-transparent to-transparent" />
             </div>
           </ScrollAnimation>
-          <div className="w-full min-w-0 flex-1">
+
+          {/* Right: Content - takes 7 columns on large screens */}
+          <div className="flex flex-col justify-center lg:col-span-7">
             <ScrollAnimation delay={0.1}>
-              <h2 className="text-foreground text-4xl font-semibold text-balance break-words">
+              <h2 className="text-foreground text-3xl font-bold tracking-tight text-balance break-words md:text-4xl lg:text-5xl">
                 {section.title}
               </h2>
             </ScrollAnimation>
+
             <ScrollAnimation delay={0.2}>
               <p
-                className="text-md text-muted-foreground my-6 text-balance break-words"
+                className="text-muted-foreground mt-6 text-lg leading-relaxed text-balance break-words"
                 dangerouslySetInnerHTML={{ __html: section.description ?? '' }}
               />
             </ScrollAnimation>
 
-            {section.buttons && section.buttons.length > 0 && (
+            {/* Feature highlights in a grid */}
+            {section.items && section.items.length > 0 && (
               <ScrollAnimation delay={0.3}>
-                <div className="flex flex-wrap items-center justify-start gap-2">
-                  {section.buttons?.map((button, idx) => (
+                <div className="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-2">
+                  {section.items.slice(0, 4).map((item, idx) => (
+                    <div
+                      key={idx}
+                      className="group flex items-start gap-3 rounded-xl bg-muted/30 p-4 transition-colors hover:bg-muted/50"
+                    >
+                      {item.icon && (
+                        <div className="flex-shrink-0 rounded-lg bg-primary/10 p-2">
+                          <SmartIcon
+                            name={item.icon as string}
+                            size={18}
+                            className="text-primary"
+                          />
+                        </div>
+                      )}
+                      <div className="min-w-0">
+                        <h3 className="text-sm font-semibold break-words">
+                          {item.title}
+                        </h3>
+                        <p
+                          className="text-muted-foreground mt-1 text-xs leading-relaxed break-words"
+                          dangerouslySetInnerHTML={{
+                            __html: item.description ?? '',
+                          }}
+                        />
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </ScrollAnimation>
+            )}
+
+            {/* CTA Buttons */}
+            {section.buttons && section.buttons.length > 0 && (
+              <ScrollAnimation delay={0.4}>
+                <div className="mt-8 flex flex-wrap items-center gap-3">
+                  {section.buttons.map((button, idx) => (
                     <Button
                       asChild
                       key={idx}
                       variant={button.variant || 'default'}
-                      size={button.size || 'default'}
+                      size={button.size || 'lg'}
+                      className={cn(
+                        idx === 0 &&
+                          'bg-primary hover:bg-primary/90 text-primary-foreground shadow-lg shadow-primary/25'
+                      )}
                     >
                       <Link
                         href={button.url ?? ''}
                         target={button.target ?? '_self'}
-                        className={cn(
-                          'focus-visible:ring-ring inline-flex items-center justify-center gap-2 rounded-md text-sm font-medium whitespace-nowrap transition-colors focus-visible:ring-1 focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50',
-                          'h-9 px-4 py-2',
-                          'bg-background ring-foreground/10 hover:bg-muted/50 dark:ring-foreground/15 dark:hover:bg-muted/50 border border-transparent shadow-sm ring-1 shadow-black/15 duration-200'
-                        )}
                       >
                         {button.icon && (
-                          <SmartIcon name={button.icon as string} size={24} />
+                          <SmartIcon name={button.icon as string} size={20} />
                         )}
                         {button.title}
                       </Link>
@@ -78,28 +126,6 @@ export function FeaturesList({
             )}
           </div>
         </div>
-
-        <ScrollAnimation delay={0.1}>
-          {/* Prevent horizontal scrolling, min-w-0 and break-words */}
-          <div className="relative grid min-w-0 grid-cols-1 gap-x-3 gap-y-6 border-t pt-12 break-words sm:grid-cols-2 sm:gap-6 lg:grid-cols-4">
-            {section.items?.map((item, idx) => (
-              <div className="min-w-0 space-y-3 break-words" key={idx}>
-                <div className="flex min-w-0 items-center gap-2">
-                  {item.icon && (
-                    <SmartIcon name={item.icon as string} size={16} />
-                  )}
-                  <h3 className="min-w-0 text-sm font-medium break-words">
-                    {item.title}
-                  </h3>
-                </div>
-                <p
-                  className="text-muted-foreground min-w-0 text-sm break-words"
-                  dangerouslySetInnerHTML={{ __html: item.description ?? '' }}
-                />
-              </div>
-            ))}
-          </div>
-        </ScrollAnimation>
       </div>
     </section>
   );

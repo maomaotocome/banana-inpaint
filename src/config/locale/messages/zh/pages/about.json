@@ -1,0 +1,186 @@
+{
+  "metadata": {
+    "title": "关于我们 - BananaPro | Nano Banana AI 的故事",
+    "description": "了解 BananaPro，领先的 Nano Banana AI 图像生成平台。探索我们如何通过 Google 先进的 Gemini 模型让 AI 创作触手可及。"
+  },
+  "page": {
+    "title": "关于 BananaPro",
+    "sections": {
+      "hero": {
+        "id": "about-hero",
+        "block": "hero",
+        "title": "用 Nano Banana AI 激发创造力",
+        "highlight_text": "Nano Banana AI",
+        "description": "我们正在搭建 Google 革命性 <strong>Nano Banana</strong> 技术与全球创作者之间的桥梁。我们的使命是让 AI 图像生成对每个人都触手可及、简单直观、功能强大。",
+        "buttons": [
+          {
+            "title": "开始创作",
+            "url": "/nanobanana-ai-image-generator",
+            "icon": "Sparkles"
+          },
+          {
+            "title": "查看画廊",
+            "url": "/showcases",
+            "variant": "outline",
+            "icon": "Images"
+          }
+        ],
+        "show_avatars": false,
+        "show_award": false
+      },
+      "story": {
+        "id": "our-story",
+        "block": "features-list",
+        "title": "我们的故事",
+        "label": "关于我们",
+        "description": "BananaPro 源于一个简单的观察：虽然 <strong>Google Nano Banana</strong> (Gemini) 代表了 AI 图像生成的巨大飞跃，但对大多数创作者来说，充分发挥其潜力仍然是一个挑战。",
+        "image": {
+          "src": "/imgs/gallery/design-1.jpg",
+          "alt": "BananaPro 团队愿景"
+        },
+        "items": [
+          {
+            "title": "起点",
+            "description": "当 <strong>Nano Banana AI</strong> 作为 Google Gemini 图像模型的社区昵称出现时，我们看到了创建能释放其真正能力的工具的机会。",
+            "icon": "RiSeedlingLine"
+          },
+          {
+            "title": "我们的使命",
+            "description": "让世界上最先进的 AI 图像技术触手可及。每一位创作者都值得拥有专业级的 <strong>Nano Banana</strong> 工具。",
+            "icon": "RiTargetLine"
+          },
+          {
+            "title": "团队",
+            "description": "我们是一群 AI 爱好者、设计师和开发者，因对创意 AI 技术边界探索的热情而走到一起。",
+            "icon": "RiTeamLine"
+          },
+          {
+            "title": "展望未来",
+            "description": "随着 <strong>Nano Banana Pro</strong> 与 Google 最新模型同步进化，我们也在不断成长。持续创新是我们的核心。",
+            "icon": "RiRocketLine"
+          }
+        ],
+        "className": "bg-muted"
+      },
+      "what_is_nano_banana": {
+        "id": "what-is-nano-banana",
+        "block": "features-accordion",
+        "title": "什么是 Nano Banana AI？",
+        "label": "技术解析",
+        "description": "<strong>Nano Banana</strong> 是社区为 Google 尖端 Gemini 图像生成模型起的昵称。以下是它的革命性之处：",
+        "items": [
+          {
+            "title": "Google Gemini 基础架构",
+            "description": "<strong>Nano Banana AI</strong> 基于 Google 的多模态 Gemini 架构构建。这意味着它能理解上下文、生成照片级真实图像，并能执行以前不可能实现的复杂编辑。",
+            "icon": "RiGoogleLine",
+            "image": {
+              "src": "/imgs/gallery/portrait-1.jpg",
+              "alt": "Gemini AI 技术"
+            }
+          },
+          {
+            "title": "卓越的提示词遵循能力",
+            "description": "与其他 AI 工具不同，<strong>Nano Banana</strong> 擅长精确遵循复杂提示词。它能准确渲染文字、保持角色一致性，并尊重你创意愿景的每一个细节。",
+            "icon": "RiCheckDoubleLine",
+            "image": {
+              "src": "/imgs/gallery/cinematic-1.jpg",
+              "alt": "提示词准确性"
+            }
+          },
+          {
+            "title": "专业品质输出",
+            "description": "从照片级真实人像到精细产品渲染，<strong>Nano Banana Pro</strong> 提供高达 4K 分辨率的工作室级品质结果，可直接用于商业用途。",
+            "icon": "RiImageLine",
+            "image": {
+              "src": "/imgs/gallery/product-1.jpg",
+              "alt": "专业输出"
+            }
+          }
+        ]
+      },
+      "values": {
+        "id": "our-values",
+        "block": "features",
+        "title": "我们的核心价值观",
+        "description": "指导 BananaPro 一切建设的原则。",
+        "items": [
+          {
+            "title": "易用性",
+            "description": "AI 创作不需要博士学位。我们让 <strong>Nano Banana</strong> 对每个人都简单直观。",
+            "icon": "RiUserHeartLine"
+          },
+          {
+            "title": "高品质",
+            "description": "我们直接连接 Google 的 <strong>Nano Banana</strong> 基础设施，确保最佳结果。",
+            "icon": "RiShieldStarLine"
+          },
+          {
+            "title": "创新",
+            "description": "我们不断开发新功能，帮助你从 <strong>Nano Banana AI</strong> 获得更多价值。",
+            "icon": "RiLightbulbLine"
+          },
+          {
+            "title": "社区",
+            "description": "我们不仅在打造工具——我们在为全球 <strong>Nano Banana</strong> 创作者建立家园。",
+            "icon": "RiGroupLine"
+          },
+          {
+            "title": "透明",
+            "description": "没有隐藏费用，没有意外。我们相信与用户坦诚、清晰地沟通。",
+            "icon": "RiEyeLine"
+          },
+          {
+            "title": "支持",
+            "description": "真人全天候待命，随时帮助你在 <strong>Nano Banana Pro</strong> 上取得成功。",
+            "icon": "RiCustomerService2Line"
+          }
+        ],
+        "className": "bg-muted"
+      },
+      "stats": {
+        "id": "about-stats",
+        "block": "stats",
+        "title": "BananaPro 数据一览",
+        "description": "与 <strong>Nano Banana</strong> 社区共同成长。",
+        "items": [
+          {
+            "title": "100万+",
+            "description": "活跃创作者"
+          },
+          {
+            "title": "1000万+",
+            "description": "已生成图像"
+          },
+          {
+            "title": "150+",
+            "description": "覆盖国家"
+          },
+          {
+            "title": "99.9%",
+            "description": "在线率"
+          }
+        ]
+      },
+      "cta": {
+        "id": "about-cta",
+        "block": "cta",
+        "title": "准备好加入 Nano Banana 革命了吗？",
+        "description": "今天就开始使用 <strong>BananaPro</strong> 创作惊艳的 AI 图像。无需任何经验。",
+        "buttons": [
+          {
+            "title": "免费开始",
+            "url": "/pricing",
+            "icon": "Zap"
+          },
+          {
+            "title": "联系我们",
+            "url": "mailto:support@bananapro.dev",
+            "variant": "outline",
+            "icon": "Mail"
+          }
+        ],
+        "className": "bg-muted"
+      }
+    }
+  }
+}

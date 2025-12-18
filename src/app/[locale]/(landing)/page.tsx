@@ -17,10 +17,13 @@ export default async function LandingPage({
 
   const showSections = [
     'hero',
-    'logos',
+    // 'logos', // Temporarily disabled - logos not providing value
+    'showcase_gallery',
     'introduce',
+    'comparison',
     'benefits',
     'usage',
+    // 'prompt_showcase', // Removed - functionality already in gallery hover
     'features',
     'stats',
     'testimonials',

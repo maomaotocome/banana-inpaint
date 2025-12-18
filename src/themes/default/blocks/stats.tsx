@@ -48,16 +48,24 @@ export function Stats({
         </ScrollAnimation>
 
         <ScrollAnimation delay={0.2}>
-          <div className="grid gap-12 divide-y *:text-center md:grid-cols-3 md:gap-2 md:divide-x md:divide-y-0">
+          <div className="grid gap-6 md:grid-cols-4 md:gap-4">
             {section.items?.map((item, idx) => (
-              <div className="space-y-4 group" key={idx}>
+              <div
+                className="group relative overflow-hidden rounded-2xl bg-card/50 border border-border/50 p-6 text-center backdrop-blur-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-primary/10 hover:border-primary/30"
+                key={idx}
+              >
+                {/* Glow effect */}
+                <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+
                 <h3 className="sr-only">
                   {item.title} {item.description}
                 </h3>
-                <div className="text-primary text-5xl font-bold transition-transform duration-300 group-hover:scale-110">
-                  <StatValue value={item.title || ''} />
+                <div className="relative z-10">
+                  <div className="text-primary text-4xl md:text-5xl font-bold mb-2 transition-transform duration-300 group-hover:scale-110">
+                    <StatValue value={item.title || ''} />
+                  </div>
+                  <p className="text-muted-foreground text-sm font-medium">{item.description}</p>
                 </div>
-                <p className="text-muted-foreground">{item.description}</p>
               </div>
             ))}
           </div>
