@@ -108,7 +108,10 @@ export function Hero({
         {/* Command Center Input */}
         {section.prompt_input && (
           <div className="mx-auto mt-8 max-w-2xl relative group z-20">
-            <div className="absolute -inset-0.5 bg-gradient-to-r from-primary via-accent to-primary rounded-full opacity-50 blur-md group-hover:opacity-75 transition duration-500"></div>
+            <div className={cn(
+              "absolute -inset-0.5 bg-gradient-to-r from-primary via-accent to-primary rounded-full blur-md transition duration-500",
+              prompt.trim() ? "opacity-75" : "opacity-40 group-hover:opacity-60"
+            )}></div>
             <div className="relative flex items-center bg-background/80 dark:bg-secondary/80 rounded-full p-1.5 ring-1 ring-border backdrop-blur-2xl shadow-2xl">
               <input
                 type="text"
@@ -121,7 +124,12 @@ export function Hero({
               <Button
                 size="lg"
                 onClick={handleGenerate}
-                className="rounded-full bg-primary text-primary-foreground tracking-wide font-bold hover:bg-primary/90 px-6 sm:px-8 py-6 shadow-[0_0_20px_rgba(255,215,0,0.15)] transition-all hover:scale-105 active:scale-95"
+                className={cn(
+                  "rounded-full bg-primary text-primary-foreground tracking-wide font-bold hover:bg-primary/90 px-6 sm:px-8 py-6 transition-all hover:scale-105 active:scale-95",
+                  prompt.trim()
+                    ? "shadow-[0_0_30px_rgba(255,215,0,0.3)]"
+                    : "shadow-[0_0_20px_rgba(255,215,0,0.15)]"
+                )}
               >
                 <SmartIcon name="sparkles" className="mr-2 size-5" />
                 {section.prompt_input.button || "Generate"}
@@ -145,17 +153,17 @@ export function Hero({
         )}
 
         {section.buttons && (
-          <div className="flex items-center justify-center gap-4 mt-10 opacity-80 hover:opacity-100 transition-opacity">
+          <div className="flex items-center justify-center gap-4 mt-10">
             {section.buttons.map((button, idx) => (
               <Button
                 asChild
                 size="sm"
                 variant={button.variant || 'ghost'}
-                className="px-4 text-xs tracking-wider uppercase text-muted-foreground hover:text-foreground"
+                className="px-5 py-2 text-sm tracking-wide text-muted-foreground hover:text-foreground border border-border/50 hover:border-border hover:bg-muted/50 transition-all duration-300"
                 key={idx}
               >
                 <Link href={button.url ?? ''} target={button.target ?? '_self'}>
-                  {button.icon && <SmartIcon name={button.icon as string} />}
+                  {button.icon && <SmartIcon name={button.icon as string} className="mr-1.5" />}
                   <span>{button.title}</span>
                 </Link>
               </Button>

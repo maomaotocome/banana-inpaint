@@ -27,9 +27,10 @@ export function FeaturesStep({
               <h2 className="text-foreground mt-4 text-4xl font-semibold">
                 {section.title}
               </h2>
-              <p className="text-muted-foreground mt-4 text-lg text-balance">
-                {section.description}
-              </p>
+              <p
+                className="text-muted-foreground mt-4 text-lg text-balance"
+                dangerouslySetInnerHTML={{ __html: section.description ?? '' }}
+              />
             </div>
           </ScrollAnimation>
 
@@ -54,9 +55,10 @@ export function FeaturesStep({
                     <h3 className="text-foreground mb-4 text-lg font-semibold">
                       {item.title}
                     </h3>
-                    <p className="text-muted-foreground text-balance">
-                      {item.description}
-                    </p>
+                    <p
+                      className="text-muted-foreground text-balance"
+                      dangerouslySetInnerHTML={{ __html: item.description ?? '' }}
+                    />
                   </div>
                 </div>
               ))}

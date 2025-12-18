@@ -47,9 +47,12 @@ export function FAQ({
                       {item.question || item.title || ''}
                     </AccordionTrigger>
                     <AccordionContent>
-                      <p className="text-base">
-                        {item.answer || item.description || ''}
-                      </p>
+                      <p
+                        className="text-base"
+                        dangerouslySetInnerHTML={{
+                          __html: item.answer || item.description || '',
+                        }}
+                      />
                     </AccordionContent>
                   </AccordionItem>
                   <hr className="mx-7 border-dashed group-last:hidden peer-data-[state=open]:opacity-0" />

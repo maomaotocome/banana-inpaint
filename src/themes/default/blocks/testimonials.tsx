@@ -13,12 +13,17 @@ export function Testimonials({
 }) {
   const TestimonialCard = ({ item }: { item: SectionItem }) => {
     return (
-      <div className="bg-card/25 ring-foreground/[0.07] flex flex-col justify-end gap-6 rounded-(--radius) border border-transparent p-8 ring-1">
-        <p className='text-foreground self-end text-balance before:mr-1 before:content-["\201C"] after:ml-1 after:content-["\201D"]'>
-          {item.quote || item.description}
-        </p>
-        <div className="flex items-center gap-3">
-          <div className="ring-foreground/10 aspect-square size-9 overflow-hidden rounded-lg border border-transparent shadow-md ring-1 shadow-black/15">
+      <div className="group bg-card/25 ring-foreground/[0.07] flex flex-col justify-end gap-6 rounded-(--radius) border border-transparent p-8 ring-1 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-primary/5 hover:bg-card/40">
+        {/* Quote icon */}
+        <div className="text-primary/20 text-4xl font-serif leading-none select-none">"</div>
+        <p
+          className='text-foreground text-balance -mt-4'
+          dangerouslySetInnerHTML={{
+            __html: item.quote || item.description || '',
+          }}
+        />
+        <div className="flex items-center gap-3 pt-2 border-t border-border/50">
+          <div className="ring-foreground/10 aspect-square size-10 overflow-hidden rounded-full border border-transparent shadow-md ring-1 shadow-black/15 transition-transform duration-300 group-hover:scale-110">
             <LazyImage
               src={item.image?.src || item.avatar?.src || ''}
               alt={item.image?.alt || item.avatar?.alt || item.name || ''}
@@ -28,8 +33,8 @@ export function Testimonials({
           <h3 className="sr-only">
             {item.name}, {item.role || item.title}
           </h3>
-          <div className="space-y-px">
-            <p className="text-sm font-medium">{item.name} </p>
+          <div className="space-y-0.5">
+            <p className="text-sm font-semibold">{item.name}</p>
             <p className="text-muted-foreground text-xs">
               {item.role || item.title}
             </p>
@@ -50,9 +55,10 @@ export function Testimonials({
             <h2 className="text-foreground mb-4 text-3xl font-semibold tracking-tight md:text-4xl">
               {section.title}
             </h2>
-            <p className="text-muted-foreground mb-6 md:mb-12 lg:mb-16">
-              {section.description}
-            </p>
+            <p
+              className="text-muted-foreground mb-6 md:mb-12 lg:mb-16"
+              dangerouslySetInnerHTML={{ __html: section.description ?? '' }}
+            />
           </div>
         </ScrollAnimation>
         <ScrollAnimation delay={0.2}>

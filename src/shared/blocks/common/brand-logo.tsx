@@ -13,7 +13,7 @@ export function BrandLogo({ brand }: { brand: BrandType }) {
       {brand.logo && (
         <Image
           src={brand.logo.src}
-          alt={brand.title ? '' : brand.logo.alt || ''}
+          alt={brand.logo.alt || brand.title || 'Logo'}
           width={brand.logo.width || 100}
           height={brand.logo.height || 100}
           className="h-10 w-auto"

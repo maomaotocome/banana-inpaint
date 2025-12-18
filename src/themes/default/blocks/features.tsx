@@ -24,9 +24,10 @@ export function Features({
             <h2 className="text-foreground mb-6 text-3xl font-bold tracking-tight md:text-4xl">
               {section.title}
             </h2>
-            <p className="text-muted-foreground text-lg leading-relaxed">
-              {section.description}
-            </p>
+            <p
+              className="text-muted-foreground text-lg leading-relaxed"
+              dangerouslySetInnerHTML={{ __html: section.description ?? '' }}
+            />
           </div>
         </ScrollAnimation>
 
@@ -51,7 +52,10 @@ export function Features({
                   </div>
                   <div className="mt-auto">
                     <h3 className="text-lg font-semibold mb-2 text-foreground">{item.title}</h3>
-                    <p className="text-muted-foreground text-sm leading-relaxed">{item.description}</p>
+                    <p
+                      className="text-muted-foreground text-sm leading-relaxed"
+                      dangerouslySetInnerHTML={{ __html: item.description ?? '' }}
+                    />
                   </div>
                 </div>
               </div>

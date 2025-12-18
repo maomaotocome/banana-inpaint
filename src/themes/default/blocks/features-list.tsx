@@ -41,9 +41,10 @@ export function FeaturesList({
               </h2>
             </ScrollAnimation>
             <ScrollAnimation delay={0.2}>
-              <p className="text-md text-muted-foreground my-6 text-balance break-words">
-                {section.description}
-              </p>
+              <p
+                className="text-md text-muted-foreground my-6 text-balance break-words"
+                dangerouslySetInnerHTML={{ __html: section.description ?? '' }}
+              />
             </ScrollAnimation>
 
             {section.buttons && section.buttons.length > 0 && (
@@ -91,9 +92,10 @@ export function FeaturesList({
                     {item.title}
                   </h3>
                 </div>
-                <p className="text-muted-foreground min-w-0 text-sm break-words">
-                  {item.description ?? ''}
-                </p>
+                <p
+                  className="text-muted-foreground min-w-0 text-sm break-words"
+                  dangerouslySetInnerHTML={{ __html: item.description ?? '' }}
+                />
               </div>
             ))}
           </div>

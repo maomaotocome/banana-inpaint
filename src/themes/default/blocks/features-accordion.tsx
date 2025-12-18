@@ -48,9 +48,10 @@ export function FeaturesAccordion({
             <h2 className="text-foreground mb-4 text-3xl font-semibold tracking-tight md:text-4xl">
               {section.title}
             </h2>
-            <p className="text-muted-foreground mb-6 md:mb-12 lg:mb-16">
-              {section.description}
-            </p>
+            <p
+              className="text-muted-foreground mb-6 md:mb-12 lg:mb-16"
+              dangerouslySetInnerHTML={{ __html: section.description ?? '' }}
+            />
           </div>
         </ScrollAnimation>
 
@@ -73,7 +74,9 @@ export function FeaturesAccordion({
                       {item.title}
                     </div>
                   </AccordionTrigger>
-                  <AccordionContent>{item.description}</AccordionContent>
+                  <AccordionContent>
+                    <p dangerouslySetInnerHTML={{ __html: item.description ?? '' }} />
+                  </AccordionContent>
                 </AccordionItem>
               ))}
             </Accordion>
