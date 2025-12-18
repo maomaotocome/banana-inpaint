@@ -7,6 +7,7 @@ import NextTopLoader from 'nextjs-toploader';
 import { envConfigs } from '@/config';
 import { locales } from '@/config/locale';
 import { UtmCapture } from '@/shared/blocks/common/utm-capture';
+import { SchemaMarkup } from '@/shared/components/schema-markup';
 import { getAllConfigs } from '@/shared/models/config';
 import { getAdsService } from '@/shared/services/ads';
 import { getAffiliateService } from '@/shared/services/affiliate';
@@ -144,6 +145,9 @@ export default async function RootLayout({
         {customerServiceMetaTags}
         {/* inject customer service head scripts */}
         {customerServiceHeadScripts}
+
+        {/* Schema.org structured data for SEO */}
+        <SchemaMarkup />
       </head>
       <body suppressHydrationWarning className="overflow-x-hidden">
         <NextTopLoader
