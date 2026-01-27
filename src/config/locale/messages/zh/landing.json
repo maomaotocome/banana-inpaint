@@ -79,7 +79,7 @@
       "button": "生成",
       "hints": ["赛博朋克", "3D渲染", "动漫风格", "油画风格", "真实照片"]
     },
-    "tip": "加入 10,000+ 正在使用 Nano Banana Google 工具的创作者",
+    "tip": "立即开始使用 Nano Banana AI 工具创作",
     "buttons": [
       {
         "title": "作品展示",
@@ -96,8 +96,8 @@
         "variant": "ghost"
       }
     ],
-    "show_avatars": true,
-    "avatars_tip": "已用 Nano Banana AI 生成 50k+ 图片",
+    "show_avatars": false,
+    "avatars_tip": "",
     "show_award": false,
     "image": {
       "src": "/imgs/hero-banana.png",
@@ -117,7 +117,7 @@
     }
   },
   "logos": {
-    "title": "基于全球最先进的 AI 图像生成模型",
+    "title": "基于先进的 AI 图像生成模型",
     "items": [
       {
         "title": "Google",
@@ -341,7 +341,7 @@
       },
       {
         "title": "社区与支持",
-        "description": "加入最大的 AI 图像爱好者社区，获得团队 24/7 全天候支持。",
+        "description": "获得团队的专业支持，与其他 AI 图像创作者交流。",
         "icon": "RiDiscussLine",
         "image": {
           "src": "/imgs/gallery/portrait-2.jpg",
@@ -473,16 +473,16 @@
   },
   "stats": {
     "id": "stats",
-    "title": "创作者信赖 BananaPro",
-    "description": "加入 <strong>Nano Banana AI</strong> 创作者的革命。",
+    "title": "为什么选择 BananaPro",
+    "description": "专业的 <strong>Nano Banana AI</strong> 图片生成工具。",
     "items": [
       {
-        "title": "1M+",
-        "description": "活跃创作者"
+        "title": "快速",
+        "description": "极速生成"
       },
       {
-        "title": "10M+",
-        "description": "已生成图片"
+        "title": "简单",
+        "description": "简洁界面"
       },
       {
         "title": "24/7",
@@ -497,64 +497,9 @@
   },
   "testimonials": {
     "id": "testimonials",
-    "title": "用户对 Nano Banana Pro 的评价",
-    "description": "来自 <strong>Nano Banana</strong> 社区的真实反馈。",
-    "items": [
-      {
-        "name": "Sarah Jenkins",
-        "role": "数字艺术家",
-        "quote": "<strong>Nano Banana Pro</strong> 彻底改变了我的工作流程。角色一致性是其他任何 AI 都无法比拟的。",
-        "image": {
-          "src": "/imgs/avatars/1.png",
-          "alt": "Sarah"
-        }
-      },
-      {
-        "name": "Mike Chen",
-        "role": "游戏开发者",
-        "quote": "我现在用 <strong>Google Nano Banana</strong> 进行所有的资源生成。BananaPro 让控制输出变得如此简单。",
-        "image": {
-          "src": "/imgs/avatars/2.png",
-          "alt": "Mike"
-        }
-      },
-      {
-        "name": "Emily Rose",
-        "role": "市场总监",
-        "quote": "<strong>Nano Banana AI</strong> 的结果立即可用于生产。强烈推荐给任何机构使用这个工具。",
-        "image": {
-          "src": "/imgs/avatars/3.png",
-          "alt": "Emily"
-        }
-      },
-      {
-        "name": "David Kim",
-        "role": "提示词工程师",
-        "quote": "我找到的最好的 <strong>Nano Banana</strong> 界面。提示词工具令人难以置信。",
-        "image": {
-          "src": "/imgs/avatars/4.png",
-          "alt": "David"
-        }
-      },
-      {
-        "name": "Lisa Wang",
-        "role": "内容创作者",
-        "quote": "<strong>Nano Banana Google</strong> 集成在这里非常流畅。快速、可靠、高质量。",
-        "image": {
-          "src": "/imgs/avatars/5.png",
-          "alt": "Lisa"
-        }
-      },
-      {
-        "name": "Tom Baker",
-        "role": "独立开发者",
-        "quote": "上周开始使用 <strong>Nano Banana Pro</strong>，3D 控制功能让我惊叹不已。",
-        "image": {
-          "src": "/imgs/avatars/6.png",
-          "alt": "Tom"
-        }
-      }
-    ]
+    "title": "强大的 AI 图片生成",
+    "description": "体验 <strong>Nano Banana AI</strong> 技术的强大能力。",
+    "items": []
   },
   "faq": {
     "id": "faq",
@@ -591,7 +536,7 @@
   "cta": {
     "id": "cta",
     "title": "立即开始使用 BananaPro 创作",
-    "description": "加入数千名正在掌握 <strong>Nano Banana AI</strong> 图片生成的用户。",
+    "description": "立即开始使用 <strong>Nano Banana AI</strong> 技术创作精美图片。",
     "buttons": [
       {
         "title": "立即开始",
@@ -628,7 +573,7 @@
     "id": "footer",
     "brand": {
       "title": "BananaPro",
-      "description": "BananaPro 是领先的 <strong>Nano Banana AI</strong> 图片生成平台。我们用最好的 Google AI 工具赋能创作者。",
+      "description": "BananaPro 是专业的 <strong>Nano Banana AI</strong> 图片生成平台。我们用强大的 Google AI 工具赋能创作者。",
       "logo": {
         "src": "/logo-banana.svg",
         "alt": "BananaPro",
@@ -698,24 +643,6 @@
     },
     "social": {
       "items": [
-        {
-          "title": "X",
-          "icon": "RiTwitterXFill",
-          "url": "https://x.com/bananapro",
-          "target": "_blank"
-        },
-        {
-          "title": "Github",
-          "icon": "Github",
-          "url": "https://github.com/bananapro",
-          "target": "_blank"
-        },
-        {
-          "title": "Discord",
-          "icon": "RiDiscordFill",
-          "url": "https://discord.gg/bananapro",
-          "target": "_blank"
-        },
         {
           "title": "邮箱",
           "icon": "Mail",
