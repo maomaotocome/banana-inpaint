@@ -1,7 +1,7 @@
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 
 import { getThemePage } from '@/core/theme';
-import { DynamicPage, Section } from '@/shared/types/blocks/landing';
+import { DynamicPage } from '@/shared/types/blocks/landing';
 
 export const revalidate = 3600;
 
@@ -13,9 +13,9 @@ export default async function LandingPage({
   const { locale } = await params;
   setRequestLocale(locale);
 
-  const t = await getTranslations('landing');
+  const t = await getTranslations('pages.index');
 
-  const showSections = [
+const showSections = [
     'hero',
     // 'logos', // Temporarily disabled - logos not providing value
     'showcase_gallery',

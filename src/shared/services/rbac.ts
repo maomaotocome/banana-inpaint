@@ -1,5 +1,5 @@
 import { cache } from 'react';
-import { and, eq, gt, inArray, isNull } from 'drizzle-orm';
+import { and, eq, gt, inArray, isNull, or } from 'drizzle-orm';
 
 import { db } from '@/core/db';
 import { permission, role, rolePermission, userRole } from '@/config/db/schema';
@@ -235,7 +235,7 @@ export const getUserRoles = cache(async (userId: string): Promise<Role[]> => {
         eq(role.status, RoleStatus.ACTIVE),
         // Check if role is not expired
         // Either expiresAt is null or expiresAt > now
-        isNull(userRole.expiresAt) || gt(userRole.expiresAt, now)
+        or(isNull(userRole.expiresAt), gt(userRole.expiresAt, now))
       )
     );
 
@@ -395,7 +395,7 @@ export async function assignRolesToUser(
   userId: string,
   roleIds: string[]
 ): Promise<void> {
-  await db().transaction(async (tx) => {
+  await db().transaction(async (tx: any) => {
     await tx.delete(userRole).where(eq(userRole.userId, userId));
 
     if (roleIds.length > 0) {
@@ -419,7 +419,7 @@ export async function getUsersByRole(roleId: string): Promise<string[]> {
     .from(userRole)
     .where(eq(userRole.roleId, roleId));
 
-  return result.map((r) => r.userId);
+  return result.map((r: any) => r.userId);
 }
 
 export async function grantRoleForNewUser(user: User) {

@@ -205,6 +205,7 @@ export function Hero({
                   loading="lazy"
                   fetchPriority="high"
                   quality={85}
+                  unoptimized={(section.image_invert?.src || section.image?.src || '').startsWith('http')}
                 />
                  )}
               </div>
@@ -213,17 +214,18 @@ export function Hero({
         </div>
       )}
 
-      {section.background_image && (
+      {section.background_image?.src && (
         <div className="absolute inset-0 -z-10 hidden h-full w-full overflow-hidden md:block select-none pointer-events-none">
           <div className="absolute inset-0 z-10 bg-gradient-to-b from-background via-background/90 to-background" />
           <Image
-            src={section.background_image?.src || ''}
-            alt={section.background_image?.alt || ''}
+            src={section.background_image.src}
+            alt={section.background_image.alt || ''}
             className="object-cover opacity-30"
             fill
             loading="lazy"
             sizes="(max-width: 768px) 0vw, 100vw"
             quality={70}
+            unoptimized={section.background_image.src.startsWith('http')}
           />
         </div>
       )}

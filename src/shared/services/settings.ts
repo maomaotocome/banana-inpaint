@@ -377,6 +377,15 @@ export async function getSettings() {
       tab: 'auth',
     },
     {
+      name: 'email_verification_enabled',
+      title: 'Email Verification Required',
+      type: 'switch',
+      value: 'false',
+      group: 'email_auth',
+      tab: 'auth',
+      tip: 'Require users to verify their email before they can sign in. Requires a configured email provider (e.g. Resend).',
+    },
+    {
       name: 'google_auth_enabled',
       title: 'Auth Enabled',
       type: 'switch',
@@ -627,6 +636,15 @@ export async function getSettings() {
       tab: 'payment',
     },
     {
+      name: 'paypal_webhook_id',
+      title: 'Paypal Webhook ID',
+      type: 'text',
+      placeholder: 'xxx',
+      tip: 'PayPal Webhook ID is used to verify the webhook notification from PayPal. You can find it in PayPal Developer Dashboard > Webhooks.',
+      group: 'paypal',
+      tab: 'payment',
+    },
+    {
       name: 'google_analytics_id',
       title: 'Google Analytics ID',
       type: 'text',
@@ -685,8 +703,8 @@ export async function getSettings() {
     {
       name: 'resend_sender_email',
       title: 'Resend Sender Email',
-      type: 'email',
-      placeholder: '',
+      type: 'text',
+      placeholder: 'ShipAny Two <no-reply@mail.shipany.site>',
       group: 'resend',
       tab: 'email',
     },
