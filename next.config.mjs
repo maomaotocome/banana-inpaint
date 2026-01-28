@@ -68,4 +68,7 @@ const nextConfig = {
 
 export default withBundleAnalyzer(withNextIntl(withMDX(nextConfig)));
 
-initOpenNextCloudflareForDev();
+// Only initialize OpenNext Cloudflare for local development, not on Vercel
+if (!process.env.VERCEL) {
+  initOpenNextCloudflareForDev();
+}
