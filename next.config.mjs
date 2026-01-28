@@ -57,11 +57,13 @@ const nextConfig = {
     },
   },
   experimental: {
-    turbopackFileSystemCacheForDev: true,
+    // turbopackFileSystemCacheForDev is only available in Next.js 16+
+    ...(process.env.VERCEL ? {} : { turbopackFileSystemCacheForDev: true }),
     // Disable mdxRs for Vercel deployment compatibility with fumadocs-mdx
     ...(process.env.VERCEL ? {} : { mdxRs: true }),
   },
-  reactCompiler: true,
+  // reactCompiler is only available in Next.js 16+
+  ...(process.env.VERCEL ? {} : { reactCompiler: true }),
 };
 
 export default withBundleAnalyzer(withNextIntl(withMDX(nextConfig)));
