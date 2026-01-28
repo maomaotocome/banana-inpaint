@@ -68,10 +68,17 @@ export function Footer({ footer }: { footer: FooterType }) {
         />
         <div className="flex min-w-0 flex-wrap justify-between gap-8">
           {footer.copyright ? (
-            <p
-              className="text-muted-foreground text-sm text-balance break-words"
-              dangerouslySetInnerHTML={{ __html: footer.copyright }}
-            />
+            <div className="flex flex-col gap-1">
+              <p
+                className="text-muted-foreground text-sm text-balance break-words"
+                dangerouslySetInnerHTML={{ __html: footer.copyright }}
+              />
+              {footer.disclaimer ? (
+                <p className="text-muted-foreground text-xs text-balance break-words opacity-70">
+                  {footer.disclaimer}
+                </p>
+              ) : null}
+            </div>
           ) : footer.brand ? (
             <Copyright brand={footer.brand} />
           ) : null}
