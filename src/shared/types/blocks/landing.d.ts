@@ -54,6 +54,7 @@ export interface Footer extends Section {
   brand?: Brand;
   nav?: Nav;
   copyright?: string;
+  disclaimer?: string;
   social?: SocialNav;
   agreement?: AgreementNav;
   show_theme?: boolean;

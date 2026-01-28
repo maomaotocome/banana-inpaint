@@ -664,6 +664,7 @@
       ]
     },
     "copyright": "© 2025 BananaPro. 保留所有权利。",
+    "disclaimer": "BananaPro 是独立产品，与 Google 或任何 AI 提供商无关联。",
     "show_built_with": false,
     "show_theme": true,
     "show_locale": true

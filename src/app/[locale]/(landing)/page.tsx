@@ -1,7 +1,7 @@
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 
 import { getThemePage } from '@/core/theme';
-import { DynamicPage } from '@/shared/types/blocks/landing';
+import { DynamicPage, Section } from '@/shared/types/blocks/landing';
 
 export const revalidate = 3600;
 

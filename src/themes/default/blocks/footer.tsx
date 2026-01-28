@@ -67,16 +67,22 @@ export function Footer({ footer }: { footer: FooterType }) {
           className="h-px min-w-0 [background-image:linear-gradient(90deg,var(--color-foreground)_1px,transparent_1px)] bg-[length:6px_1px] bg-repeat-x opacity-25"
         />
         <div className="flex min-w-0 flex-wrap justify-between gap-8">
-          {footer.copyright ? (
-            <p
-              className="text-muted-foreground text-sm text-balance break-words"
-              dangerouslySetInnerHTML={{ __html: footer.copyright }}
-            />
-          ) : footer.brand ? (
-            <Copyright brand={footer.brand} />
-          ) : null}
-
-          <div className="min-w-0 flex-1"></div>
+          <div className="flex min-w-0 flex-col gap-1">
+            {footer.copyright ? (
+              <p
+                className="text-muted-foreground text-sm text-balance break-words"
+                dangerouslySetInnerHTML={{ __html: footer.copyright }}
+              />
+            ) : footer.brand ? (
+              <Copyright brand={footer.brand} />
+            ) : null}
+            {footer.disclaimer ? (
+              <p
+                className="text-muted-foreground text-xs text-balance break-words opacity-70"
+                dangerouslySetInnerHTML={{ __html: footer.disclaimer }}
+              />
+            ) : null}
+          </div>
 
           {footer.agreement ? (
             <div className="flex min-w-0 flex-wrap items-center gap-4">
