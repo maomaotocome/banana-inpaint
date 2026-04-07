@@ -35,10 +35,10 @@
           "icon": "RiRobot2Line"
         },
         {
-          "title": "Blog",
-          "description": "Nano Banana Tips & News",
-          "url": "/blog",
-          "icon": "Newspaper"
+          "title": "Free AI Image",
+          "description": "Generate images with AI for free",
+          "url": "/free-ai-image-generator",
+          "icon": "Sparkles"
         }
       ]
     },

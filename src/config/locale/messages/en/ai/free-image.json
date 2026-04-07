@@ -1,0 +1,23 @@
+{
+  "metadata": {
+    "title": "Free AI Image Generator - No Signup Required",
+    "description": "Generate images with AI for free. No signup, no credit card required."
+  },
+  "page": {
+    "title": "Free AI Image Generator",
+    "description": "Generate stunning images with AI for free. No signup, no credit card required."
+  },
+  "generator": {
+    "title": "Free Image Generator",
+    "prompt": "Prompt",
+    "prompt_placeholder": "Describe the image you want to generate...",
+    "generate": "Generate Image",
+    "generating": "Generating...",
+    "progress": "Progress",
+    "generated_images": "Generated Image",
+    "no_images_generated": "No Images Generated Yet",
+    "ready_to_generate": "Your image will appear here",
+    "free_badge": "100% Free",
+    "prompt_too_long": "Prompt is too long"
+  }
+}

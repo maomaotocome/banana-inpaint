@@ -1,0 +1,23 @@
+{
+  "metadata": {
+    "title": "免费 AI 图片生成器 - 无需注册",
+    "description": "免费使用 AI 生成图片，无需注册，无需信用卡。"
+  },
+  "page": {
+    "title": "免费 AI 图片生成器",
+    "description": "免费使用 AI 生成精美图片，无需注册，无需信用卡。"
+  },
+  "generator": {
+    "title": "免费图片生成器",
+    "prompt": "提示词",
+    "prompt_placeholder": "描述你想生成的图片...",
+    "generate": "生成图片",
+    "generating": "生成中...",
+    "progress": "进度",
+    "generated_images": "生成结果",
+    "no_images_generated": "暂无生成结果",
+    "ready_to_generate": "生成的图片将显示在这里",
+    "free_badge": "完全免费",
+    "prompt_too_long": "提示词过长"
+  }
+}
